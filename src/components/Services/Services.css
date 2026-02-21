@@ -1,0 +1,142 @@
+.services {
+  background: #FAF8F5;
+  padding: clamp(5rem, 10vw, 9rem) 2rem;
+}
+
+.services__container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.services__header {
+  margin-bottom: clamp(3rem, 6vw, 5rem);
+  text-align: center;
+}
+
+.services__label {
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: #B5835A;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  margin-bottom: 1.25rem;
+}
+
+.services__title {
+  font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+  font-weight: 500;
+  color: #2A1F1A;
+  line-height: 1.2;
+  max-width: 580px;
+  margin: 0 auto;
+}
+
+.services__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.services__card {
+  padding: clamp(2.5rem, 5vw, 3.5rem);
+  border-radius: 1px;
+}
+
+.services__card--dark {
+  background: #2C1810;
+}
+
+.services__card--light {
+  background: #F2EDE6;
+}
+
+.services__card-label {
+  font-size: 0.7rem;
+  font-weight: 400;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  margin-bottom: 1.25rem;
+}
+
+.services__card--dark .services__card-label {
+  color: #C4A882;
+}
+
+.services__card--light .services__card-label {
+  color: #B5835A;
+}
+
+.services__card-title {
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.25;
+  margin-bottom: 1.5rem;
+}
+
+.services__card--dark .services__card-title {
+  color: #FAF8F5;
+}
+
+.services__card--light .services__card-title {
+  color: #2A1F1A;
+}
+
+.services__list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.services__list-item {
+  display: flex;
+  align-items: baseline;
+  gap: 0.75rem;
+  font-size: 0.9rem;
+  font-weight: 300;
+}
+
+.services__card--dark .services__list-item {
+  color: rgba(250, 248, 245, 0.75);
+}
+
+.services__card--light .services__list-item {
+  color: #6B5448;
+}
+
+.services__list-dot {
+  color: #C4A882;
+  font-size: 0.45rem;
+  flex-shrink: 0;
+}
+
+.services__cta {
+  text-decoration: none;
+  font-size: 0.875rem;
+  font-weight: 500;
+  padding: 0.8rem 1.75rem;
+  border-radius: 2px;
+  display: inline-block;
+  transition: background 0.2s;
+  letter-spacing: 0.03em;
+}
+
+.services__card--dark .services__cta {
+  color: #2A1F1A;
+  background: #C4A882;
+}
+
+.services__card--dark .services__cta:hover {
+  background: #B5835A;
+}
+
+.services__card--light .services__cta {
+  color: #FAF8F5;
+  background: #5C3D2E;
+}
+
+.services__card--light .services__cta:hover {
+  background: #2C1810;
+}

@@ -1,0 +1,121 @@
+.location {
+  background: #2C1810;
+  padding: clamp(5rem, 10vw, 9rem) 2rem;
+}
+
+.location__grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: clamp(3rem, 6vw, 6rem);
+  align-items: center;
+}
+
+.location__label {
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: #C4A882;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  margin-bottom: 1.25rem;
+}
+
+.location__title {
+  font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+  font-weight: 500;
+  color: #FAF8F5;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+}
+
+.location__intro {
+  font-size: 1rem;
+  font-weight: 300;
+  color: rgba(250, 248, 245, 0.65);
+  line-height: 1.8;
+  margin-bottom: 3rem;
+}
+
+.location__items {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.location__item {
+  display: flex;
+  gap: 1.25rem;
+  align-items: flex-start;
+}
+
+.location__item-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(196, 168, 130, 0.15);
+  border: 1px solid rgba(196, 168, 130, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  font-size: 0.85rem;
+  color: #C4A882;
+}
+
+.location__item-label {
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: #C4A882;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 0.3rem;
+}
+
+.location__item-text {
+  font-size: 0.95rem;
+  font-weight: 300;
+  color: rgba(250, 248, 245, 0.8);
+  line-height: 1.5;
+}
+
+.location__item-link {
+  color: rgba(250, 248, 245, 0.8);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.location__item-link:hover {
+  color: #C4A882;
+}
+
+.location__media {
+  transition-delay: 0.15s;
+}
+
+.location__photo {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 1px;
+  display: block;
+}
+
+.location__cta {
+  display: block;
+  margin-top: 1.5rem;
+  text-decoration: none;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #2A1F1A;
+  background: #C4A882;
+  padding: 1rem 2rem;
+  text-align: center;
+  border-radius: 2px;
+  letter-spacing: 0.04em;
+  transition: background 0.2s;
+}
+
+.location__cta:hover {
+  background: #B5835A;
+}
