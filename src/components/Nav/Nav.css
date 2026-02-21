@@ -9,9 +9,9 @@
 }
 
 .nav--scrolled {
-  background: rgba(250, 248, 245, 0.96);
-  box-shadow: 0 1px 0 rgba(180, 150, 120, 0.15);
-  backdrop-filter: blur(8px);
+  background: rgba(250, 245, 238, 0.55);
+  box-shadow: 0 1px 0 rgba(180, 150, 120, 0.08);
+  backdrop-filter: blur(16px);
 }
 
 .nav__inner {
@@ -21,7 +21,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 72px;
+  height: 60px;
 }
 
 .nav__logo {
@@ -32,7 +32,7 @@
 }
 
 .nav__logo img {
-  height: 48px;
+  height: 38px;
   width: auto;
 }
 
