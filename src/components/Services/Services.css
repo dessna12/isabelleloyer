@@ -1,5 +1,5 @@
 .services {
-  background: #FAF8F5;
+  background: var(--color-cream);
   padding: clamp(5rem, 10vw, 9rem) 2rem;
 }
 
@@ -16,7 +16,7 @@
 .services__label {
   font-size: 0.75rem;
   font-weight: 400;
-  color: #B5835A;
+  color: var(--color-taupe);
   letter-spacing: 0.15em;
   text-transform: uppercase;
   margin-bottom: 1.25rem;
@@ -25,7 +25,7 @@
 .services__title {
   font-size: clamp(1.8rem, 3.5vw, 2.6rem);
   font-weight: 500;
-  color: #2A1F1A;
+  color: var(--color-text);
   line-height: 1.2;
   max-width: 580px;
   margin: 0 auto;
@@ -43,11 +43,12 @@
 }
 
 .services__card--dark {
-  background: #2C1810;
+  background: var(--color-cream);
+  border: 2px solid var(--color-taupe);
 }
 
 .services__card--light {
-  background: #F2EDE6;
+  background: var(--color-linen);
 }
 
 .services__card-label {
@@ -59,11 +60,11 @@
 }
 
 .services__card--dark .services__card-label {
-  color: #C4A882;
+  color: var(--color-taupe);
 }
 
 .services__card--light .services__card-label {
-  color: #B5835A;
+  color: var(--color-taupe);
 }
 
 .services__card-title {
@@ -74,11 +75,11 @@
 }
 
 .services__card--dark .services__card-title {
-  color: #FAF8F5;
+  color: var(--color-text);
 }
 
 .services__card--light .services__card-title {
-  color: #2A1F1A;
+  color: var(--color-text);
 }
 
 .services__list {
@@ -99,15 +100,15 @@
 }
 
 .services__card--dark .services__list-item {
-  color: rgba(250, 248, 245, 0.75);
+  color: var(--color-text-muted);
 }
 
 .services__card--light .services__list-item {
-  color: #6B5448;
+  color: var(--color-text-muted);
 }
 
 .services__list-dot {
-  color: #C4A882;
+  color: var(--color-taupe);
   font-size: 0.45rem;
   flex-shrink: 0;
 }
@@ -124,19 +125,19 @@
 }
 
 .services__card--dark .services__cta {
-  color: #2A1F1A;
-  background: #C4A882;
+  color: var(--color-cream);
+  background: var(--color-forest);
 }
 
 .services__card--dark .services__cta:hover {
-  background: #B5835A;
+  background: var(--color-forest-hover);
 }
 
 .services__card--light .services__cta {
-  color: #FAF8F5;
-  background: #5C3D2E;
+  color: var(--color-cream);
+  background: var(--color-forest);
 }
 
 .services__card--light .services__cta:hover {
-  background: #2C1810;
+  background: var(--color-forest-dark);
 }

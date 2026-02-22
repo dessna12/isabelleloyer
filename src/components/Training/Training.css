@@ -1,0 +1,125 @@
+.training {
+  background: var(--color-linen);
+  padding: clamp(5rem, 10vw, 9rem) 2rem;
+}
+
+.training__container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* ── Header ── */
+
+.training__header {
+  margin-bottom: clamp(3rem, 6vw, 5rem);
+}
+
+.training__label {
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: var(--color-taupe);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  margin-bottom: 1.25rem;
+}
+
+.training__title {
+  font-size: clamp(1.8rem, 3.5vw, 2.4rem);
+  font-weight: 500;
+  color: var(--color-text);
+  line-height: 1.2;
+  margin: 0;
+  max-width: 560px;
+}
+
+/* ── Timeline container ── */
+
+/* Override reveal — children animate individually */
+.training__timeline.reveal {
+  opacity: 1;
+  transform: none;
+  transition: none;
+}
+
+.training__timeline {
+  display: flex;
+  flex-direction: column;
+}
+
+/* ── Entry ── */
+
+.training__entry {
+  display: flex;
+  gap: 2rem;
+
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.training__timeline.visible .training__entry            { opacity: 1; transform: translateY(0); }
+.training__timeline.visible .training__entry:nth-child(1) { transition-delay: 0.05s; }
+.training__timeline.visible .training__entry:nth-child(2) { transition-delay: 0.20s; }
+.training__timeline.visible .training__entry:nth-child(3) { transition-delay: 0.35s; }
+.training__timeline.visible .training__entry:nth-child(4) { transition-delay: 0.50s; }
+
+/* ── Marker (dot + line) ── */
+
+.training__entry-marker {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0;
+  width: 20px;
+}
+
+.training__entry-dot {
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background: var(--color-taupe);
+  flex-shrink: 0;
+  margin-top: 0.3rem;
+  ring: 3px solid var(--color-linen);
+  box-shadow: 0 0 0 3px var(--color-linen);
+}
+
+.training__entry-line {
+  width: 1px;
+  flex: 1;
+  background: rgba(196, 168, 130, 0.35);
+  margin-top: 0.4rem;
+  min-height: 2.5rem;
+}
+
+.training__entry:last-child .training__entry-line {
+  display: none;
+}
+
+/* ── Content ── */
+
+.training__entry-content {
+  padding-bottom: 2.5rem;
+  flex: 1;
+}
+
+.training__entry:last-child .training__entry-content {
+  padding-bottom: 0;
+}
+
+.training__entry-title {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--color-taupe);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin: 0 0 0.4rem;
+}
+
+.training__entry-text {
+  font-size: 1rem;
+  font-weight: 300;
+  color: var(--color-text-brown);
+  line-height: 1.65;
+  margin: 0;
+}

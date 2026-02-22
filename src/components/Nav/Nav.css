@@ -9,8 +9,8 @@
 }
 
 .nav--scrolled {
-  background: rgba(250, 245, 238, 0.55);
-  box-shadow: 0 1px 0 rgba(180, 150, 120, 0.08);
+  background: rgba(250, 248, 245, 0.55);
+  box-shadow: 0 1px 0 rgba(26, 46, 24, 0.08);
   backdrop-filter: blur(16px);
 }
 
@@ -42,25 +42,36 @@
   gap: 2rem;
 }
 
+/* Nav transparente (sur hero) — texte clair */
 .nav__link {
   text-decoration: none;
   font-size: 0.875rem;
   font-weight: 400;
-  color: #6B5448;
+  color: rgba(250, 248, 245, 0.88);
   letter-spacing: 0.03em;
   transition: color 0.2s;
 }
 
 .nav__link:hover {
-  color: #B5835A;
+  color: var(--color-taupe);
 }
 
+/* Nav scrollée — texte sombre */
+.nav--scrolled .nav__link {
+  color: var(--color-text-muted);
+}
+
+.nav--scrolled .nav__link:hover {
+  color: var(--color-forest);
+}
+
+/* CTA taupe crème (cohérent avec le bouton hero) */
 .nav__cta {
   text-decoration: none;
   font-size: 0.875rem;
   font-weight: 500;
-  color: #FAF8F5;
-  background: #B5835A;
+  color: var(--color-text);
+  background: var(--color-taupe);
   padding: 0.6rem 1.4rem;
   border-radius: 2px;
   letter-spacing: 0.04em;
@@ -69,7 +80,7 @@
 }
 
 .nav__cta:hover {
-  background: #9A6B45;
+  background: #B0946E;
 }
 
 .nav__hamburger {
@@ -86,13 +97,17 @@
   display: block;
   width: 24px;
   height: 1.5px;
-  background: #5C3D2E;
+  background: rgba(250, 248, 245, 0.88);
   transition: transform 0.3s;
 }
 
+.nav--scrolled .nav__hamburger span {
+  background: var(--color-forest-dark);
+}
+
 .nav__mobile {
-  background: #FAF8F5;
-  border-top: 1px solid #E8DDD2;
+  background: var(--color-cream);
+  border-top: 1px solid var(--color-stone);
   padding: 1.5rem 2rem 2rem;
   display: flex;
   flex-direction: column;
@@ -102,7 +117,7 @@
 .nav__mobile-link {
   text-decoration: none;
   font-size: 1rem;
-  color: #5C3D2E;
+  color: var(--color-forest-dark);
   font-weight: 400;
 }
 
@@ -110,8 +125,8 @@
   text-decoration: none;
   font-size: 0.9rem;
   font-weight: 500;
-  color: #FAF8F5;
-  background: #B5835A;
+  color: var(--color-cream);
+  background: var(--color-forest);
   padding: 0.75rem 1.5rem;
   text-align: center;
   border-radius: 2px;
@@ -120,7 +135,7 @@
 }
 
 .nav__mobile-cta:hover {
-  background: #9A6B45;
+  background: var(--color-forest-hover);
 }
 
 @media (max-width: 900px) {

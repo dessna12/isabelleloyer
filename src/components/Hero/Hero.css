@@ -9,10 +9,10 @@
 .hero__bg {
   position: absolute;
   inset: 0;
-  background-image: url('/images/hero-galets-2.jpg');
+  background-image: url('/images/leaf-hero-1.jpg');
   background-size: cover;
   background-position: center;
-  filter: brightness(0.55) saturate(0.8);
+  filter: brightness(0.6) saturate(0.80);
 }
 
 .hero__overlay {
@@ -20,9 +20,9 @@
   inset: 0;
   background: linear-gradient(
     120deg,
-    rgba(42, 31, 26, 0.72) 0%,
-    rgba(92, 61, 46, 0.35) 60%,
-    rgba(181, 131, 90, 0.15) 100%
+    rgba(40, 72, 68, 0.92) 0%,
+    rgba(55, 88, 84, 0.50) 45%,
+    rgba(196, 168, 130, 0.05) 100%
   );
 }
 
@@ -42,7 +42,7 @@
 .hero__eyebrow {
   font-size: 0.8rem;
   font-weight: 400;
-  color: #C4A882;
+  color: var(--color-taupe);
   letter-spacing: 0.15em;
   text-transform: uppercase;
   margin-bottom: 1.5rem;
@@ -51,14 +51,14 @@
 .hero__title {
   font-size: clamp(2.5rem, 6vw, 3rem);
   font-weight: 500;
-  color: #FAF8F5;
+  color: var(--color-cream);
   line-height: 1.1;
   margin-bottom: 1.75rem;
 }
 
 .hero__title em {
   font-style: italic;
-  color: #C4A882;
+  color: var(--color-taupe);
 }
 
 .hero__subtitle {
@@ -88,8 +88,8 @@
   text-decoration: none;
   font-size: 0.9rem;
   font-weight: 500;
-  color: #2A1F1A;
-  background: #C4A882;
+  color: var(--color-text);
+  background: var(--color-taupe);
   padding: 0.9rem 2rem;
   border-radius: 2px;
   letter-spacing: 0.04em;
@@ -98,7 +98,7 @@
 }
 
 .hero__cta-primary:hover {
-  background: #B5835A;
+  background: #B0946E;
   transform: translateY(-1px);
 }
 
@@ -114,7 +114,7 @@
 }
 
 .hero__cta-secondary:hover {
-  color: #C4A882;
+  color: var(--color-taupe);
 }
 
 

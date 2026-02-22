@@ -1,17 +1,17 @@
 .problems {
-  background: #2C1810;
+  background: var(--color-linen);
   padding: clamp(5rem, 10vw, 9rem) 2rem;
 }
 
 .problems__container {
-  max-width: 1200px;
+  max-width: 1100px;
   margin: 0 auto;
 }
 
 .problems__label {
   font-size: 0.75rem;
   font-weight: 400;
-  color: #C4A882;
+  color: var(--color-taupe);
   letter-spacing: 0.15em;
   text-transform: uppercase;
   margin-bottom: 1.5rem;
@@ -20,7 +20,7 @@
 .problems__title {
   font-size: clamp(2rem, 4vw, 3rem);
   font-weight: 500;
-  color: #FAF8F5;
+  color: var(--color-text);
   line-height: 1.2;
   max-width: 640px;
   margin-bottom: 1.5rem;
@@ -30,53 +30,121 @@
 .problems__intro {
   font-size: 1rem;
   font-weight: 300;
-  color: rgba(250, 248, 245, 0.65);
+  color: var(--color-text-muted);
   max-width: 560px;
   line-height: 1.75;
-  margin-bottom: clamp(3rem, 6vw, 5rem);
+  margin-bottom: clamp(3rem, 6vw, 4.5rem);
 }
 
-.problems__grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 1px;
-  background: rgba(196, 168, 130, 0.12);
-  border: 1px solid rgba(196, 168, 130, 0.12);
+/* ── Flow container ─────────────────────────────────── */
+
+/* Override reveal so only children animate, not the container */
+.problems__flow.reveal {
+  opacity: 1;
+  transform: none;
+  transition: none;
 }
+
+.problems__flow {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+/* ── Individual symptom items ────────────────────────── */
 
 .problems__item {
-  padding: 1.75rem 2rem;
-  background: transparent;
-  display: flex;
-  gap: 1rem;
-  align-items: flex-start;
+  font-size: clamp(1rem, 2vw, 1.3rem);
+  font-weight: 300;
+  color: var(--color-text-brown);
+  line-height: 1.65;
+  padding: 1rem 1.5rem 1rem 1.75rem;
+  border-left: 2px solid rgba(196, 168, 130, 0.35);
+  margin: 0;
+
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
 }
 
-.problems__item--alt {
-  background: rgba(255, 255, 255, 0.03);
+/* Separator between items */
+.problems__item + .problems__item {
+  border-top: 1px solid rgba(196, 168, 130, 0.12);
 }
 
-.problems__icon {
-  color: #C4A882;
+/* ── Staggered fade when container enters viewport ───── */
+
+.problems__flow.visible .problems__item {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.problems__flow.visible .problems__item:nth-child(1) { transition-delay: 0.05s; }
+.problems__flow.visible .problems__item:nth-child(2) { transition-delay: 0.18s; }
+.problems__flow.visible .problems__item:nth-child(3) { transition-delay: 0.31s; }
+.problems__flow.visible .problems__item:nth-child(4) { transition-delay: 0.44s; }
+.problems__flow.visible .problems__item:nth-child(5) { transition-delay: 0.57s; }
+.problems__flow.visible .problems__item:nth-child(6) { transition-delay: 0.70s; }
+
+/* ── Em / keyword highlight ──────────────────────────── */
+
+.problems__item em {
+  font-style: italic;
+  color: var(--color-taupe);
+  font-weight: 400;
+}
+
+/* ── Link ────────────────────────────────────────────── */
+
+.problems__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-top: 2.5rem;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--color-forest);
+  letter-spacing: 0.03em;
+  transition: gap 0.2s ease, color 0.2s ease;
+}
+
+.problems__link:hover {
+  color: var(--color-forest-hover);
+  gap: 0.9rem;
+}
+
+.problems__link-arrow {
   font-size: 1rem;
-  margin-top: 0.1rem;
+  transition: transform 0.2s ease;
+}
+
+.problems__link:hover .problems__link-arrow {
+  transform: translateX(3px);
+}
+
+/* ── Closing quote ───────────────────────────────────── */
+
+.problems__closing {
+  margin-top: clamp(3.5rem, 5vw, 5rem);
+  max-width: 560px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.75rem;
+}
+
+.problems__closing-icon {
+  color: var(--color-taupe);
   flex-shrink: 0;
 }
 
-.problems__text {
-  font-size: 0.95rem;
-  font-weight: 300;
-  color: rgba(250, 248, 245, 0.8);
-  line-height: 1.65;
-}
-
-.problems__closing {
+.problems__closing p {
   font-family: "Playfair Display", Georgia, serif;
   font-style: italic;
-  font-size: clamp(1.1rem, 2vw, 1.3rem);
-  color: #C4A882;
-  margin-top: clamp(3rem, 5vw, 4rem);
-  max-width: 600px;
-  line-height: 1.6;
+  font-size: clamp(1.05rem, 2vw, 1.25rem);
+  color: var(--color-text-muted);
+  line-height: 1.7;
   font-weight: 400;
+  margin: 0;
 }

@@ -1,0 +1,91 @@
+.parcours {
+  background: var(--color-cream);
+  padding: clamp(5rem, 10vw, 9rem) 2rem;
+}
+
+.parcours__container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(3rem, 6vw, 6rem);
+  align-items: start;
+}
+
+.parcours__label {
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: var(--color-taupe);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  margin-bottom: 1.25rem;
+}
+
+.parcours__title {
+  font-size: clamp(1.8rem, 3.5vw, 2.4rem);
+  font-weight: 500;
+  color: var(--color-text);
+  line-height: 1.2;
+  margin: 0;
+}
+
+/* ── List ── */
+
+.parcours__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.parcours__item {
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+  padding: 1.25rem 0 1.25rem 0;
+  border-bottom: 1px solid rgba(196, 168, 130, 0.18);
+
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.parcours__item:first-child {
+  border-top: 1px solid rgba(196, 168, 130, 0.18);
+}
+
+.parcours__list.visible .parcours__item { opacity: 1; transform: translateY(0); }
+.parcours__list.visible .parcours__item:nth-child(1) { transition-delay: 0.05s; }
+.parcours__list.visible .parcours__item:nth-child(2) { transition-delay: 0.18s; }
+.parcours__list.visible .parcours__item:nth-child(3) { transition-delay: 0.31s; }
+.parcours__list.visible .parcours__item:nth-child(4) { transition-delay: 0.44s; }
+
+/* Override reveal on list container — children animate individually */
+.parcours__list.reveal {
+  opacity: 1;
+  transform: none;
+  transition: none;
+}
+
+.parcours__item-dot {
+  font-size: 0.85rem;
+  color: var(--color-taupe);
+  flex-shrink: 0;
+  line-height: 1.6;
+}
+
+.parcours__item-text {
+  font-size: 1rem;
+  font-weight: 300;
+  color: var(--color-text-brown);
+  line-height: 1.65;
+}
+
+@media (max-width: 768px) {
+  .parcours__container {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+}

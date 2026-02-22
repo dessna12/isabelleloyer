@@ -24,7 +24,7 @@ export default function Nav() {
   return (
     <header className={`nav${scrolled ? ' nav--scrolled' : ''}`}>
       <div className="nav__inner">
-        <Link to="/" className="nav__logo">
+        <Link to="/" className="nav__logo" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
           <img src="/images/logo.png" alt="Isabelle Loyer" />
         </Link>
 

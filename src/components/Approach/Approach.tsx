@@ -1,26 +1,22 @@
+import { Link } from 'react-router-dom'
 import { useReveal } from '../../hooks/useReveal'
 import './Approach.css'
 
 const goals = [
   {
     icon: '◎',
-    title: 'Apaiser le système nerveux',
-    text: "Réduire les réactions de stress, d'hypervigilance et les déclencheurs automatiques.",
+    title: 'L\'IFS (Internal Family Systems)',
+    text: 'Pour mieux comprendre ses fonctionnements internes et apaiser les conflits intérieurs.',
   },
   {
     icon: '◎',
-    title: 'Retrouver des émotions stables',
-    text: 'Mieux ressentir, nommer et réguler vos états émotionnels au quotidien.',
+    title: 'La régulation du système nerveux',
+    text: 'Pour aider le corps à sortir de l\'état d\'alerte, réduire l\'anxiété et retrouver un sentiment de sécurité.',
   },
   {
     icon: '◎',
-    title: 'Développer la sécurité intérieure',
-    text: 'Construire un rapport à vous-même plus ancré, plus confiant et moins réactif.',
-  },
-  {
-    icon: '◎',
-    title: 'Des relations plus sereines',
-    text: 'Transformer les schémas relationnels répétitifs pour créer des liens plus nourrissants.',
+    title: 'L\'approche psychocorporelle (Expérience Somatique)',
+    text: 'Pour prendre en compte les tensions, les sensations corporelles et les réactions automatiques, et s\'en libérer.',
   },
 ]
 
@@ -37,39 +33,43 @@ export default function Approach() {
             Une thérapie centrée sur le système nerveux et la sécurité intérieure
           </h2>
           <p className="approach__intro">
-            Les traumas ne sont pas seulement des souvenirs douloureux — ils s'inscrivent dans
-            le corps et le système nerveux. Le travail se fait à votre rythme, dans un cadre
-            bienveillant, respectueux et confidentiel.
+            Les traumas ne sont pas seulement des souvenirs douloureux — ils s'inscrivent
+            dans le corps et le système nerveux. Mon accompagnement s'appuie sur des approches
+            validées par la recherche, travaillées à votre rythme et dans un cadre bienveillant.
           </p>
         </div>
 
         <div ref={cardsRef as React.RefObject<HTMLDivElement>} className="approach__grid reveal">
           {goals.map((g, i) => (
             <div key={i} className="approach__card">
-              <div className="approach__card-icon">{g.icon}</div>
-              <h3 className="approach__card-title">{g.title}</h3>
+              <div className="approach__card-header">
+                <span className="approach__card-icon">{g.icon}</span>
+                <h3 className="approach__card-title">{g.title}</h3>
+              </div>
               <p className="approach__card-text">{g.text}</p>
             </div>
           ))}
+          <div className="approach__card">
+            <div className="approach__card-header">
+              <span className="approach__card-icon">◎</span>
+              <h3 className="approach__card-title">Stimulations bilatérales (proches de l\'EMDR)</h3>
+            </div>
+            <p className="approach__card-text">
+              Lorsque cela est pertinent, j\'intègre des stimulations bilatérales alternées (SBA),
+              inspirées de l\'EMDR, pour aider certaines mémoires à se retraiter sans revivre les
+              événements, et toujours dans le respect de vos limites.
+            </p>
+          </div>
         </div>
 
         <div className="approach__profile">
-          <img
-            src="/images/isabelle-laughing.jpeg"
-            alt="Isabelle Loyer"
-            className="approach__profile-img"
-          />
-          <div>
-            <p className="approach__profile-quote">
-              "Un espace sûr pour explorer ce que les mots ont du mal à atteindre."
-            </p>
-            <p className="approach__profile-text">
-              Mon accompagnement s'appuie sur des approches validées par la recherche :
-              la thérapie des systèmes familiaux internes (IFS), la régulation du
-              système nerveux et l'expérience somatique — pour que le changement se
-              ressente autant dans le corps que dans la pensée.
-            </p>
-          </div>
+          <p className="approach__profile-quote">
+            "Un espace sûr pour explorer ce que les mots ont du mal à atteindre."
+          </p>
+          <Link to="/accompagnements" className="approach__link">
+            En savoir plus sur mes approches
+            <span className="approach__link-arrow" aria-hidden>→</span>
+          </Link>
         </div>
       </div>
     </section>

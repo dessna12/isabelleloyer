@@ -16,10 +16,12 @@ export default function Footer() {
       <div className="footer__inner">
         <div className="footer__top">
           <div>
-            <img src="/images/logo.png" alt="Isabelle Loyer" className="footer__logo" />
-            <p className="footer__tagline">
-              Thérapeute spécialisée dans les traumas et les épreuves de vie. Le Cannet, Alpes-Maritimes.
-            </p>
+            <div className="footer__brand">
+              <img src="/images/logo.png" alt="Isabelle Loyer" className="footer__logo" />
+              <p className="footer__tagline">
+                Thérapeute spécialisée dans les traumas et les épreuves de vie. Le Cannet, Alpes-Maritimes.
+              </p>
+            </div>
           </div>
 
           <div>

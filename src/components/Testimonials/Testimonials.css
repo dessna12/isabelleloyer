@@ -1,5 +1,5 @@
 .testimonials {
-  background: #FAF8F5;
+  background: var(--color-cream);
   padding: clamp(5rem, 10vw, 9rem) 2rem;
 }
 
@@ -16,7 +16,7 @@
 .testimonials__label {
   font-size: 0.75rem;
   font-weight: 400;
-  color: #B5835A;
+  color: var(--color-taupe);
   letter-spacing: 0.15em;
   text-transform: uppercase;
   margin-bottom: 1.25rem;
@@ -25,7 +25,7 @@
 .testimonials__title {
   font-size: clamp(1.8rem, 3.5vw, 2.6rem);
   font-weight: 500;
-  color: #2A1F1A;
+  color: var(--color-text);
   line-height: 1.2;
 }
 
@@ -36,7 +36,7 @@
 }
 
 .testimonials__card {
-  background: #F2EDE6;
+  background: var(--color-linen);
   padding: 2.25rem;
   border-radius: 1px;
   display: flex;
@@ -47,7 +47,7 @@
   display: flex;
   gap: 3px;
   margin-bottom: 1.25rem;
-  color: #C4A882;
+  color: var(--color-taupe);
   font-size: 0.85rem;
 }
 
@@ -55,7 +55,7 @@
   font-family: "Playfair Display", Georgia, serif;
   font-style: italic;
   font-size: 1rem;
-  color: #5C3D2E;
+  color: var(--color-text-brown);
   line-height: 1.75;
   font-weight: 400;
   flex: 1;
@@ -64,10 +64,10 @@
 .testimonials__author {
   margin-top: 1.5rem;
   padding-top: 1.25rem;
-  border-top: 1px solid #D4C4B4;
+  border-top: 1px solid var(--color-stone);
   font-size: 0.825rem;
   font-weight: 500;
-  color: #8C6F5A;
+  color: var(--color-text-light);
   letter-spacing: 0.05em;
 }
 
@@ -76,7 +76,7 @@
   margin-top: 3rem;
   font-size: 0.8rem;
   font-weight: 300;
-  color: #9C8478;
+  color: var(--color-text-faint);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -84,5 +84,5 @@
 }
 
 .testimonials__badge-stars {
-  color: #C4A882;
+  color: var(--color-taupe);
 }
