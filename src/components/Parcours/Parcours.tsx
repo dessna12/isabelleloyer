@@ -2,10 +2,10 @@ import { useReveal } from '../../hooks/useReveal'
 import './Parcours.css'
 
 const formations = [
-  'Diplômée de l'EFAPO (École Française d'Analyse Psycho-Organique).',
+  'Diplômée de l\'EFAPO (École Française d\'Analyse Psycho-Organique).',
   'Formation approfondie en Psychotraumatologie (OYA Formations).',
   'Formation aux TCA (Troubles du Comportement Alimentaire – Association Autrement).',
-  'Pratique de l'IFS et outils psychocorporels.',
+  'Pratique de l\'IFS et outils psychocorporels.',
 ]
 
 export default function Parcours() {
