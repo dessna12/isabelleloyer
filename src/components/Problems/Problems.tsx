@@ -1,16 +1,12 @@
 import { Link } from 'react-router-dom'
-import { PiLeaf } from 'react-icons/pi'
 import { useReveal } from '../../hooks/useReveal'
 import './Problems.css'
 
 const symptoms = [
-  <><em>Hypervigilance</em> — sensation d'être toujours sur le qui-vive, en alerte</>,
-  <>Difficulté à <em>ressentir ou exprimer</em> vos émotions, comme un vide intérieur</>,
-  <><em>Cauchemars</em>, souvenirs envahissants qui surgissent sans prévenir</>,
-  <>Crises d'<em>angoisse</em> ou stress difficile à nommer, qui semblent venir de nulle part</>,
-  <><em>Fatigue profonde</em> — émotionnelle, physique — perte de sens ou d'élan</>,
-  <>Conflits qui se répètent, <em>difficultés relationnelles</em> qui vous épuisent</>,
-  <><em>Troubles du comportement alimentaire</em>, tentative de régulation face à une tension intérieure trop importante.</>
+  <><em>Sortir de l'Emprise & de la Toxicité</em><br /> Pour ne plus douter de vos perceptions, sortir de la confusion et retrouver votre identité face à une relation dénigrante ou manipulatrice.</>,
+  <><em>Réparer les Blessures d'Enfance </em><br /> Pour apaiser un manque de confiance profond ou un sentiment d'illégitimité né d'un climat familial insécurisant, d'une absence de limites ou d'un vécu incestuel</>,
+  <><em>Réguler les Compulsions & Addictions </em><br /> Pour comprendre comment l'alcool ou les troubles alimentaires (boulimie, hyperphagie) sont des tentatives de survie face à une angoisse ou un vide que vous ne maîtrisez plus.</>,
+  <><em>Restaurer le Lien de Couple </em><br /> Pour sortir des disputes répétitives et comprendre comment vos histoires personnelles influencent votre relation et votre sentiment de sécurité aujourd'hui.</>
 ]
 
 export default function Problems() {
@@ -27,12 +23,11 @@ export default function Problems() {
         </p>
 
         <h2 ref={textRef as React.RefObject<HTMLHeadingElement>} className="problems__title reveal">
-          Quand les blessures du passé continuent d'impacter votre présent
+          Mettre des mots sur votre vécu pour sortir de l'impasse
         </h2>
 
         <p className="problems__intro">
-          Certaines expériences de vie laissent des traces durables dans le corps, les émotions et les relations.
-          Même longtemps après, un mal-être difficile à expliquer peut persister.
+          Le trauma ne se limite pas aux événements visibles. Il se loge souvent dans le quotidien, sous différentes formes{"\u00A0"}:
         </p>
 
         <div ref={flowRef as React.RefObject<HTMLDivElement>} className="problems__flow reveal">
@@ -46,7 +41,7 @@ export default function Problems() {
         
 
         <div ref={closingRef as React.RefObject<HTMLDivElement>} className="problems__closing reveal">
-          <PiLeaf className="problems__closing-icon" aria-hidden size={28} />
+          <span className="problems__closing-icon" aria-hidden>◎</span>
           <p>
             Ces réactions ne sont pas un signe de faiblesse — elles sont souvent la conséquence d'événements
             qui ont dépassé vos capacités d'adaptation à un moment de votre vie.

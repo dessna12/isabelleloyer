@@ -1,20 +1,25 @@
+import { PiGraduationCap, PiBrain, PiFlowerLotus, PiPersonArmsSpread } from 'react-icons/pi'
 import { useReveal } from '../../hooks/useReveal'
 import './Training.css'
 
 const formations = [
   {
+    icon: PiGraduationCap,
     title: 'EFAPO',
-    text: 'Dipl\u00f4m\u00e9e de l\'EFAPO \u2014 \u00c9cole Fran\u00e7aise d\'Analyse Psycho-Organique.',
+    text: 'Diplômée de l\'EFAPO — École Française d\'Analyse Psycho-Organique.',
   },
   {
+    icon: PiBrain,
     title: 'Psychotraumatologie',
     text: 'Formation approfondie en Psychotraumatologie (OYA Formations).',
   },
   {
+    icon: PiFlowerLotus,
     title: 'TCA',
     text: 'Formation aux Troubles du Comportement Alimentaire (Association Autrement).',
   },
   {
+    icon: PiPersonArmsSpread,
     title: 'IFS & psychocorporel',
     text: 'Pratique de l\'IFS et outils psychocorporels.',
   },
@@ -33,18 +38,21 @@ export default function Training() {
         </div>
 
         <div ref={timelineRef as React.RefObject<HTMLDivElement>} className="training__timeline reveal">
-          {formations.map((f, i) => (
-            <div key={i} className="training__entry">
-              <div className="training__entry-marker">
-                <span className="training__entry-dot" />
-                <span className="training__entry-line" />
+          {formations.map((f, i) => {
+            const Icon = f.icon
+            return (
+              <div key={i} className="training__entry">
+                <div className="training__entry-marker">
+                  <Icon className="training__entry-icon" aria-hidden size={22} />
+                  <span className="training__entry-line" />
+                </div>
+                <div className="training__entry-content">
+                  <p className="training__entry-title">{f.title}</p>
+                  <p className="training__entry-text">{f.text}</p>
+                </div>
               </div>
-              <div className="training__entry-content">
-                <p className="training__entry-title">{f.title}</p>
-                <p className="training__entry-text">{f.text}</p>
-              </div>
-            </div>
-          ))}
+            )
+          })}
         </div>
       </div>
     </section>
