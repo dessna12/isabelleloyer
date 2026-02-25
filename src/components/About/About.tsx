@@ -4,7 +4,7 @@ import './About.css'
 const specializations = [
   "Traumatismes dans l'enfance",
   "Blessures d'abandon, de rejet ou d'humiliation",
-  'Deuil difficile',
+  'Agressions sexuelles ou harcèlement',
   'Burn-out ou épuisement professionnel',
   'Violences conjugales ou psychologiques',
   'Accident, agression ou événement marquant',
@@ -21,7 +21,7 @@ export default function About() {
         <div ref={imgRef as React.RefObject<HTMLDivElement>} className="about__image-wrapper reveal">
           <div className="about__image-bg" />
           <img
-            src="/images/photo-principale-isabelle-loyer.jpeg"
+            src="/images/isabelle-laughing.webp"
             alt="Isabelle Loyer, thérapeute"
             className="about__image"
           />

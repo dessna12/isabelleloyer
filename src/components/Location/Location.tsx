@@ -56,7 +56,7 @@ export default function Location() {
 
         <div ref={rightRef as React.RefObject<HTMLDivElement>} className="location__media reveal">
           <img
-            src="/images/cabinet de consultation.jpeg"
+            src="/images/cabinet de consultation.webp"
             alt="Cabinet de consultation Isabelle Loyer"
             className="location__photo"
           />

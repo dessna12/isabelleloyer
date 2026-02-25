@@ -18,6 +18,11 @@ const goals = [
     title: 'L\'approche psychocorporelle (Expérience Somatique)',
     text: 'Pour prendre en compte les tensions, les sensations corporelles et les réactions automatiques, et s\'en libérer.',
   },
+  {
+    icon: '◎',
+    title: 'Stimulations bilatérales (proches de l\'EMDR)',
+    text: 'Lorsque cela est pertinent, j\'intègre des stimulations bilatérales alternées (SBA), inspirées de l\'EMDR, pour aider certaines mémoires à se retraiter sans revivre les événements, et toujours dans le respect de vos limites.',
+  }
 ]
 
 export default function Approach() {
@@ -49,17 +54,6 @@ export default function Approach() {
               <p className="approach__card-text">{g.text}</p>
             </div>
           ))}
-          <div className="approach__card">
-            <div className="approach__card-header">
-              <span className="approach__card-icon">◎</span>
-              <h3 className="approach__card-title">Stimulations bilatérales (proches de l\'EMDR)</h3>
-            </div>
-            <p className="approach__card-text">
-              Lorsque cela est pertinent, j\'intègre des stimulations bilatérales alternées (SBA),
-              inspirées de l\'EMDR, pour aider certaines mémoires à se retraiter sans revivre les
-              événements, et toujours dans le respect de vos limites.
-            </p>
-          </div>
         </div>
 
         <div className="approach__profile">
