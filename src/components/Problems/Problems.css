@@ -4,7 +4,7 @@
 }
 
 .problems__container {
-  max-width: 1100px;
+  max-width: 760px;
   margin: 0 auto;
 }
 
@@ -54,7 +54,7 @@
 /* ── Individual symptom items ────────────────────────── */
 
 .problems__item {
-  font-size: clamp(1rem, 2vw, 1.3rem);
+  font-size: clamp(0.95rem, 1.4vw, 1.05rem);
   font-weight: 300;
   color: var(--color-text-brown);
   line-height: 1.65;
@@ -91,7 +91,7 @@
 .problems__item em {
   font-style: italic;
   color: var(--color-taupe);
-  font-weight: 400;
+  font-weight: 600;
 }
 
 /* ── Link ────────────────────────────────────────────── */
