@@ -1,10 +1,10 @@
-import Hero from '../components/Hero/Hero'
-import Problems from '../components/Problems/Problems'
-import About from '../components/About/About'
-import Approach from '../components/Approach/Approach'
-import Training from '../components/Training/Training'
-import Services from '../components/Services/Services'
-import Location from '../components/Location/Location'
+import Hero from '../components/home/Hero/Hero'
+import Problems from '../components/home/Problems/Problems'
+import About from '../components/home/About/About'
+import Approach from '../components/home/Approach/Approach'
+import Training from '../components/home/Training/Training'
+import Services from '../components/home/Services/Services'
+import Location from '../components/home/Location/Location'
 
 export default function Home() {
   return (
