@@ -40,32 +40,32 @@ export default function Nav() {
         </nav>
 
         <button
-          className="nav__hamburger"
+          className={`nav__hamburger${menuOpen ? ' nav__hamburger--open' : ''}`}
           onClick={() => setMenuOpen(!menuOpen)}
-          aria-label="Menu"
+          aria-label={menuOpen ? 'Fermer le menu' : 'Ouvrir le menu'}
+          aria-expanded={menuOpen}
         >
           <span /><span /><span />
         </button>
       </div>
 
-      {menuOpen && (
-        <div className="nav__mobile">
-          {links.map(link => (
-            <NavLink
-              key={link.to}
-              to={link.to}
-              className="nav__mobile-link"
-              onClick={() => setMenuOpen(false)}
-              end={link.to === '/'}
-            >
-              {link.label}
-            </NavLink>
-          ))}
-          <Link to="/#contact" className="nav__mobile-cta" onClick={() => setMenuOpen(false)}>
-            Prendre rendez-vous
-          </Link>
-        </div>
-      )}
+      <div className={`nav__mobile${menuOpen ? ' nav__mobile--open' : ''}`} aria-hidden={!menuOpen}>
+        {links.map(link => (
+          <NavLink
+            key={link.to}
+            to={link.to}
+            className="nav__mobile-link"
+            onClick={() => setMenuOpen(false)}
+            end={link.to === '/'}
+            tabIndex={menuOpen ? 0 : -1}
+          >
+            {link.label}
+          </NavLink>
+        ))}
+        <Link to="/#contact" className="nav__mobile-cta" onClick={() => setMenuOpen(false)} tabIndex={menuOpen ? 0 : -1}>
+          Prendre rendez-vous
+        </Link>
+      </div>
     </header>
   )
 }

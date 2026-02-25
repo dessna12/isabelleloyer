@@ -9,7 +9,7 @@ export default function Hero() {
       <div className="hero__content">
         <div className="hero__inner">
 
-          {/* <p className="hero__name">Isabelle Loyer</p> */}
+          <p className="hero__name">Isabelle Loyer</p>
           
           <p className="hero__eyebrow">Thérapeute Traumatismes et Relations <br /> Le Cannet · Alpes-Maritimes · En ligne</p>
 
@@ -24,8 +24,8 @@ export default function Hero() {
 
 
           <p className="hero__location">
-            Consultations avec Isabelle Loyer au Cannet et en visioconférence partout en France
-            {/* Je vous aide à mettre des mots sur l’invisible pour retrouver votre sécurité intérieure. */}
+            {/* Consultations avec Isabelle Loyer au Cannet et en visioconférence partout en France */}
+            Je vous aide à mettre des mots sur l’invisible pour retrouver votre sécurité intérieure.
           </p>
 
           <div className="hero__actions">

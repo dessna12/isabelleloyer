@@ -1,14 +1,25 @@
 import { useReveal } from '../../hooks/useReveal'
 import './About.css'
 
-const specializations = [
-  "Traumatismes dans l'enfance",
-  "Blessures d'abandon, de rejet ou d'humiliation",
-  'Agressions sexuelles ou harcèlement',
-  'Burn-out ou épuisement professionnel',
-  'Violences conjugales ou psychologiques',
-  'Accident, agression ou événement marquant',
-  'Stress post-traumatique',
+const pillars = [
+  {
+    title: "Le respect de votre rythme",
+    desc: "Nous ne forçons pas les souvenirs. Nous travaillons sur ce qui est présent pour vous, ici et maintenant, en douceur."
+  },
+  {
+    title: "L'approche globale",
+    desc: "Un travail qui prend en compte le corps, les émotions et le système relationnel pour apaiser la peur, la sidération ou la honte."
+  },
+  {
+    title: "L'intégration durable",
+    desc: "Utiliser des outils comme l'ICV pour « prouver » à votre système nerveux que le passé est enfin terminé et restaurer votre sécurité."
+  }
+]
+
+const results = [
+  "Retrouver de la clarté et ne plus douter de vous-même.",
+  "Apaiser les tensions corporelles et les réactions émotionnelles disproportionnées.",
+  "Se sentir enfin légitime et à sa place dans vos relations intérieure."
 ]
 
 export default function About() {
@@ -31,30 +42,35 @@ export default function About() {
           <p className="about__label">Isabelle Loyer</p>
 
           <h2 className="about__title">
-            Un accompagnement spécialisé dans les traumas et les épreuves de vie
+            Un cadre sécurisant pour une reconstruction en douceur
           </h2>
 
           <p className="about__intro">
-            Je vous accompagne lorsque votre histoire personnelle ou relationnelle a laissé
-            des blessures émotionnelles durables. Mon approche s'adresse notamment aux
-            personnes ayant vécu :
+            Au sein de mon cabinet au Cannet ou en visioconférence, je vous propose un espace de soin sans jugement basé sur{"\u00A0"}:
           </p>
 
           <ul className="about__list">
-            {specializations.map((item, i) => (
+            {pillars.map((item, i) => (
               <li key={i} className="about__list-item">
                 <span className="about__list-dot">●</span>
-                {item}
+                <span>
+                  <strong className="about__list-title">{item.title}</strong> : {item.desc}
+                </span>
               </li>
             ))}
           </ul>
 
-          <blockquote className="about__quote">
-            <p>
-              L'objectif est de vous aider à retrouver un sentiment de sécurité intérieure,
-              à comprendre vos réactions et à sortir des schémas qui vous font souffrir.
-            </p>
-          </blockquote>
+          <div className="about__results">
+            <p className="about__results-label">Les résultats vers lesquels nous tendons</p>
+            <ul className="about__results-list">
+              {results.map((r, i) => (
+                <li key={i} className="about__results-item">
+                  <span className="about__list-dot">●</span>
+                  {r}
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
       </div>
     </section>

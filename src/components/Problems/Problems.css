@@ -135,8 +135,10 @@
 }
 
 .problems__closing-icon {
+  font-size: 1.5rem;
   color: var(--color-taupe);
   flex-shrink: 0;
+  line-height: 1;
 }
 
 .problems__closing p {

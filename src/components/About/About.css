@@ -84,27 +84,53 @@
   font-size: 0.9rem;
   font-weight: 300;
   color: var(--color-text-brown);
+  line-height: 1.7;
+}
+
+.about__list-title {
+  font-weight: 500;
+  color: var(--color-text);
 }
 
 .about__list-dot {
   color: var(--color-taupe);
   font-size: 0.5rem;
   flex-shrink: 0;
+  margin-top: 0.45rem;
 }
 
-.about__quote {
-  margin: 0;
+.about__results {
+  margin-top: 2rem;
   padding: 1.25rem 1.5rem;
   border-left: 3px solid var(--color-taupe);
   background: var(--color-linen);
   border-radius: 0 2px 2px 0;
 }
 
-.about__quote p {
-  font-family: "Playfair Display", Georgia, serif;
-  font-style: italic;
-  font-size: 1.05rem;
+.about__results-label {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--color-taupe);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 0.85rem;
+}
+
+.about__results-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.about__results-item {
+  display: flex;
+  align-items: baseline;
+  gap: 0.75rem;
+  font-size: 0.9rem;
+  font-weight: 300;
   color: var(--color-text-brown);
-  line-height: 1.65;
-  font-weight: 400;
+  line-height: 1.6;
 }
