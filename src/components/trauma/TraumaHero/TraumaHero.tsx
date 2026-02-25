@@ -4,6 +4,14 @@ export default function TraumaHero() {
   return (
     <div className="trauma-hero">
 
+      <div className="trauma-hero__image-wrap">
+        <div className="trauma-hero__image-bg" />
+        <div className="trauma-hero__image-overlay" />
+        <p className="trauma-hero__quote">
+          Le trauma n'est pas une fatalité. C'est une mémoire qui peut être intégrée
+          pour cesser de dicter votre présent.
+        </p>
+      </div>
       <div className="trauma-hero__text">
         <p className="trauma-hero__label">Ressources</p>
         <h1 className="trauma-hero__title">
@@ -19,14 +27,6 @@ export default function TraumaHero() {
         </p>
       </div>
 
-      <div className="trauma-hero__image-wrap">
-        <div className="trauma-hero__image-bg" />
-        <div className="trauma-hero__image-overlay" />
-        <p className="trauma-hero__quote">
-          Le trauma n'est pas une fatalité. C'est une mémoire qui peut être intégrée
-          pour cesser de dicter votre présent.
-        </p>
-      </div>
 
     </div>
   )
