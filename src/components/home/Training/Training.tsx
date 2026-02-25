@@ -1,5 +1,5 @@
 import { PiGraduationCap, PiBrain, PiFlowerLotus, PiPersonArmsSpread } from 'react-icons/pi'
-import { useReveal } from '../../hooks/useReveal'
+import { useReveal } from '../../../hooks/useReveal'
 import './Training.css'
 
 const formations = [

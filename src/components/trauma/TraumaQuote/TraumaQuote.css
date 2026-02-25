@@ -1,0 +1,19 @@
+.trauma-quote {
+  border-top: 1px solid #E8DDD7;
+}
+
+.trauma-quote__inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 2rem 6rem;
+}
+
+.trauma-quote__text {
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: clamp(1.1rem, 2.5vw, 1.5rem);
+  font-weight: 400;
+  font-style: italic;
+  color: #2A1F1A;
+  line-height: 1.6;
+  max-width: 680px;
+}

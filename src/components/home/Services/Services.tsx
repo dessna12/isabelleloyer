@@ -1,4 +1,4 @@
-import { useReveal } from '../../hooks/useReveal'
+import { useReveal } from '../../../hooks/useReveal'
 import './Services.css'
 
 const individualItems = [

@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { useReveal } from '../../hooks/useReveal'
+import { useReveal } from '../../../hooks/useReveal'
 import './Problems.css'
 
 const symptoms = [
@@ -38,7 +38,7 @@ export default function Problems() {
           ))}
         </div>
 
-        
+
 
         <div ref={closingRef as React.RefObject<HTMLDivElement>} className="problems__closing reveal">
           <span className="problems__closing-icon" aria-hidden>◎</span>

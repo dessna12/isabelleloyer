@@ -1,0 +1,93 @@
+/* ── TEXT ── */
+.trauma-hero__text {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: clamp(4rem, 8vw, 7rem) 2rem 3rem;
+}
+
+.trauma-hero__label {
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: #B5835A;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  margin-bottom: 1.25rem;
+}
+
+.trauma-hero__title {
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: clamp(2rem, 4vw, 3.25rem);
+  font-weight: 500;
+  color: #2A1F1A;
+  line-height: 1.2;
+  margin-bottom: 2rem;
+  max-width: 720px;
+}
+
+.trauma-hero__intro {
+  font-size: 1rem;
+  font-weight: 300;
+  color: #6B5448;
+  line-height: 1.8;
+  max-width: 640px;
+}
+
+/* ── IMAGE ── */
+.trauma-hero__image-wrap {
+  height: clamp(320px, 45vw, 520px);
+  overflow: hidden;
+  position: relative;
+}
+
+.trauma-hero__image-bg {
+  position: absolute;
+  inset: 0;
+  background-image: url('/images/dark-forest.jpg');
+  background-size: cover;
+  background-position: center;
+  filter: sepia(0.45) saturate(0.65) brightness(0.72);
+}
+
+/* Warm overlay to tie into the site's taupe/brown palette */
+.trauma-hero__image-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(42, 31, 26, 0.55) 0%,
+    rgba(107, 84, 72, 0.25) 100%
+  );
+  z-index: 1;
+}
+
+.trauma-hero__quote {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  margin: 0 auto;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: clamp(1.1rem, 2.5vw, 1.6rem);
+  font-weight: 400;
+  font-style: italic;
+  color: rgba(250, 248, 245, 0.92);
+  line-height: 1.65;
+  text-align: center;
+  text-shadow: 0 1px 6px rgba(42, 31, 26, 0.5);
+  max-width: 680px;
+  margin-inline: auto;
+}
+
+/* ── MOBILE ── */
+@media (max-width: 768px) {
+  .trauma-hero__text {
+    padding: 2.5rem 1.75rem 2rem;
+  }
+
+  .trauma-hero__image-wrap {
+    height: 240px;
+  }
+}

@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { Link, NavLink } from 'react-router-dom'
+import { Link, NavLink, useLocation } from 'react-router-dom'
 import './Nav.css'
 
 const links = [
@@ -12,6 +12,8 @@ const links = [
 ]
 
 export default function Nav() {
+  const { pathname } = useLocation()
+  const isHome = pathname === '/'
   const [scrolled, setScrolled] = useState(false)
   const [menuOpen, setMenuOpen] = useState(false)
 
@@ -22,7 +24,7 @@ export default function Nav() {
   }, [])
 
   return (
-    <header className={`nav${scrolled ? ' nav--scrolled' : ''}`}>
+    <header className={`nav${!isHome || scrolled ? ' nav--scrolled' : ''}`}>
       <div className="nav__inner">
         <Link to="/" className="nav__logo" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
           <img src="/images/logo.png" alt="Isabelle Loyer" />

@@ -1,0 +1,16 @@
+/* ── MAIN ── */
+.trauma-main {
+  padding-top: 60px;
+}
+
+/* ── SECTIONS ── */
+.trauma-sections {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 2rem 6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+/* ── MOBILE ── */

@@ -1,4 +1,4 @@
-import { useReveal } from '../../hooks/useReveal'
+import { useReveal } from '../../../hooks/useReveal'
 import './Location.css'
 
 export default function Location() {
