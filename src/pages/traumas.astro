@@ -30,6 +30,17 @@ const sections = [
   },
   {
     number: '03',
+    title: "Le traumatisme des violences (Sexuelles, Conjugales, Physiques)",
+    target: "Les personnes ayant vécu un viol, une agression sexuelle ou des violences conjugales",
+    intro:
+      "Lorsque l'on subit une agression, qu'elle soit ponctuelle ou répétée, le système nerveux est submergé par une menace trop grande pour être fuie ou combattue. C'est ici que s'installe la sidération : une déconnexion entre le corps et l'esprit pour ne plus \"sentir\" la douleur.",
+    lived:
+      "Même des années après, le corps peut rester \"figé\" dans cet instant. Cela se manifeste par des flash-backs, une hyper-vigilance constante, ou au contraire, une sensation d'être anesthésiée, coupée de ses émotions et de son corps.",
+    support:
+      "Mon approche permet de sortir de cet état de survie sans jamais vous forcer à revivre l'effraction. Nous travaillons à restaurer, millimètre par millimètre, votre périmètre de sécurité et votre capacité à habiter votre corps en toute dignité.",
+  },
+  {
+    number: '04',
     title: "Quand le corps cherche à s'apaiser (Compulsions & Addictions)",
     target: "Les personnes souffrant de troubles alimentaires ou de dépendances",
     intro:
@@ -40,7 +51,7 @@ const sections = [
       "Au-delà du symptôme, nous explorons ensemble la régulation émotionnelle et la sécurité intérieure pour sortir de ce cycle de dépendance.",
   },
   {
-    number: '04',
+    number: '05',
     title: "Le trauma au cœur du couple",
     target: "Les couples en crise ou impactés par des blessures anciennes",
     intro:
@@ -64,6 +75,10 @@ const sections = [
       {sections.map(s => <SectionCard client:load s={s} />)}
     </section>
 
-    <TraumaQuote client:load />
+
+    <div class="trauma-cta reveal">
+      <p class="trauma-cta__text">Découvrez mes méthodes pour vous aider</p>
+      <a href="/accompagnements" class="trauma-cta__link">Voir les accompagnements</a>
+    </div>
   </main>
 </Layout>

@@ -1,0 +1,30 @@
+/* ── MAIN ── */
+.apropos-main {
+  padding-top: 60px;
+}
+
+/* ── CLOSING ── */
+.apropos-closing {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: clamp(3rem, 6vw, 5rem) 2rem clamp(4rem, 8vw, 7rem);
+  border-top: 1px solid #E8DDD7;
+}
+
+.apropos-closing__text {
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: clamp(1.1rem, 2.5vw, 1.5rem);
+  font-weight: 400;
+  font-style: italic;
+  color: #2A1F1A;
+  line-height: 1.7;
+  max-width: 680px;
+  margin-bottom: 1.5rem;
+}
+
+.apropos-closing__signature {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #B5835A;
+  letter-spacing: 0.05em;
+}
