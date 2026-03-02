@@ -1,0 +1,134 @@
+.accomp-card {
+  background: #F7F3EE;
+  border: 1px solid #E8DDD7;
+}
+
+/* ── HEADER (bouton cliquable) ── */
+.accomp-card__header {
+  width: 100%;
+  padding: 2rem 2.5rem 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  transition: background 0.2s ease;
+}
+
+.accomp-card__header:hover {
+  background: #EDE6DC;
+}
+
+.accomp-card__header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.accomp-card__number {
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 0.85rem;
+  font-weight: 400;
+  color: #B5835A;
+  letter-spacing: 0.12em;
+}
+
+.accomp-card__toggle {
+  font-size: 1.4rem;
+  font-weight: 300;
+  color: #B5835A;
+  line-height: 1;
+  transition: transform 0.25s ease;
+}
+
+.accomp-card__quote {
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: clamp(1.15rem, 2.5vw, 1.5rem);
+  font-weight: 400;
+  font-style: italic;
+  color: #2A1F1A;
+  line-height: 1.4;
+  margin-bottom: 1.25rem;
+  max-width: 680px;
+}
+
+.accomp-card__title {
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  font-weight: 600;
+  color: #2A1F1A;
+  margin-bottom: 0.3rem;
+}
+
+.accomp-card__type {
+  font-size: 0.7rem;
+  font-weight: 400;
+  color: #B5835A;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+/* ── BODY (accordéon) ── */
+.accomp-card__body-wrap {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+}
+
+.accomp-card--open .accomp-card__body-wrap {
+  max-height: 600px;
+}
+
+.accomp-card__body {
+  border-top: 1px solid #E8DDD7;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.accomp-card__col {
+  padding: 1.5rem 2.5rem;
+}
+
+.accomp-card__col:first-child {
+  border-right: 1px solid #E8DDD7;
+}
+
+.accomp-card__col-label {
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: #2A1F1A;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+}
+
+.accomp-card__col-text {
+  font-size: 0.9rem;
+  font-weight: 300;
+  color: #6B5448;
+  line-height: 1.8;
+}
+
+/* ── MOBILE ── */
+@media (max-width: 768px) {
+  .accomp-card__header {
+    padding: 1.5rem 1.5rem 1rem;
+  }
+
+  .accomp-card--open .accomp-card__body-wrap {
+    max-height: 900px;
+  }
+
+  .accomp-card__body {
+    grid-template-columns: 1fr;
+  }
+
+  .accomp-card__col {
+    padding: 1.25rem 1.5rem;
+  }
+
+  .accomp-card__col:first-child {
+    border-right: none;
+    border-bottom: 1px solid #E8DDD7;
+  }
+}

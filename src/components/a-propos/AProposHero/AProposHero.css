@@ -1,0 +1,83 @@
+.apropos-hero {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: clamp(3rem, 6vw, 5rem) 2rem;
+}
+
+.apropos-hero__content {
+  display: grid;
+  grid-template-columns: 1fr 360px;
+  gap: 5rem;
+  align-items: start;
+}
+
+.apropos-hero__label {
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: #B5835A;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.apropos-hero__title {
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: clamp(2rem, 4vw, 3.25rem);
+  font-weight: 500;
+  color: #2A1F1A;
+  line-height: 1.2;
+  margin-bottom: 1.75rem;
+}
+
+.apropos-hero__quote {
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  font-weight: 400;
+  font-style: italic;
+  color: #6B5448;
+  line-height: 1.6;
+  padding-left: 1.25rem;
+  border-left: 2px solid #C4A882;
+  margin-bottom: 1.75rem;
+}
+
+.apropos-hero__intro {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #2A1F1A;
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+
+.apropos-hero__body {
+  font-size: 0.95rem;
+  font-weight: 300;
+  color: #6B5448;
+  line-height: 1.8;
+}
+
+.apropos-hero__photo-wrap {
+  position: sticky;
+  top: 100px;
+}
+
+.apropos-hero__photo {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  object-position: top;
+  display: block;
+}
+
+/* ── MOBILE ── */
+@media (max-width: 768px) {
+  .apropos-hero__content {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .apropos-hero__photo-wrap {
+    position: static;
+    max-width: 280px;
+  }
+}

@@ -1,0 +1,86 @@
+.apropos-approche {
+  background: #F2EDE6;
+}
+
+.apropos-approche__inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: clamp(3rem, 6vw, 5rem) 2rem;
+}
+
+.apropos-approche__label {
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: #B5835A;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.apropos-approche__title {
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: clamp(1.5rem, 3vw, 2.25rem);
+  font-weight: 500;
+  color: #2A1F1A;
+  margin-bottom: 1.75rem;
+  max-width: 720px;
+}
+
+.apropos-approche__intro {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 760px;
+  margin-bottom: 2.5rem;
+}
+
+.apropos-approche__intro p {
+  font-size: 0.95rem;
+  font-weight: 300;
+  color: #6B5448;
+  line-height: 1.8;
+}
+
+.apropos-approche__methodes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.apropos-approche__methode {
+  background: #FAF8F5;
+  border-left: 3px solid #C4A882;
+  padding: 1.5rem 1.75rem;
+}
+
+.apropos-approche__methode-title {
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: #2A1F1A;
+  margin-bottom: 0.75rem;
+}
+
+.apropos-approche__methode-text {
+  font-size: 0.9rem;
+  font-weight: 300;
+  color: #6B5448;
+  line-height: 1.8;
+}
+
+.apropos-approche__closing {
+  font-size: 0.95rem;
+  font-weight: 400;
+  font-style: italic;
+  color: #B5835A;
+  line-height: 1.7;
+  max-width: 640px;
+}
+
+/* ── MOBILE ── */
+@media (max-width: 768px) {
+  .apropos-approche__methodes {
+    grid-template-columns: 1fr;
+  }
+}

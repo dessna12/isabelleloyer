@@ -2,7 +2,7 @@
 .trauma-hero__text {
   max-width: 1200px;
   margin: 0 auto;
-  padding: clamp(4rem, 8vw, 7rem) 2rem 3rem;
+  padding: clamp(2rem, 4vw, 5rem) 2rem 3rem;
 }
 
 .trauma-hero__label {
@@ -34,7 +34,7 @@
 
 /* ── IMAGE ── */
 .trauma-hero__image-wrap {
-  height: clamp(320px, 45vw, 520px);
+  height: clamp(160px, 22.5vw, 260px);
   overflow: hidden;
   position: relative;
 }
