@@ -19,13 +19,13 @@ export default function Hero() {
             <em>ou d'une relation qui vous a blessé·e ?</em>
           </h1>
           <p className="hero__subtitle">
-            Gagnez en sérénité. Cabinet de thérapie spécialisé dans l'accompagnement des difficultés émotionnelles, relationnelles et des vécus traumatiques
+            Retrouvez votre sécurité. Cabinet de thérapie spécialisé dans l’accompagnement des vécus traumatiques et des difficultés relationnelles.
           </p>
 
 
           <p className="hero__location">
             {/* Consultations avec Isabelle Loyer au Cannet et en visioconférence partout en France */}
-            Je vous aide à mettre des mots sur l'invisible pour retrouver votre sécurité intérieure.
+            Je vous aide à mettre des mots sur ce qui se rejoue et à retrouver stabilité et apaisement.
           </p>
 
           <div className="hero__actions">

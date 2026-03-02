@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom'
 import './Footer.css'
 
 const navLinks = [
@@ -28,7 +27,7 @@ export default function Footer() {
             <p className="footer__section-title">Navigation</p>
             <div className="footer__links">
               {navLinks.map(link => (
-                <Link key={link.to} to={link.to} className="footer__link">{link.label}</Link>
+                <a key={link.to} href={link.to} className="footer__link">{link.label}</a>
               ))}
             </div>
           </div>

@@ -1,4 +1,3 @@
-import { useReveal } from '../../../hooks/useReveal'
 import './Parcours.css'
 
 const formations = [
@@ -9,18 +8,15 @@ const formations = [
 ]
 
 export default function Parcours() {
-  const headRef = useReveal()
-  const listRef = useReveal(0.08)
-
   return (
     <section className="parcours">
       <div className="parcours__container">
-        <div ref={headRef as React.RefObject<HTMLDivElement>} className="parcours__header reveal">
+        <div className="parcours__header reveal">
           <p className="parcours__label">Parcours & formation</p>
           <h2 className="parcours__title">Un accompagnement ancré dans une formation solide</h2>
         </div>
 
-        <ul ref={listRef as React.RefObject<HTMLUListElement>} className="parcours__list reveal">
+        <ul className="parcours__list reveal">
           {formations.map((f, i) => (
             <li key={i} className="parcours__item">
               <span className="parcours__item-dot" aria-hidden>◎</span>

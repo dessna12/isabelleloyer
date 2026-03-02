@@ -1,4 +1,3 @@
-import { useReveal } from '../../../hooks/useReveal'
 import './Testimonials.css'
 
 const reviews = [
@@ -17,18 +16,15 @@ const reviews = [
 ]
 
 export default function Testimonials() {
-  const headRef = useReveal()
-  const cardsRef = useReveal(0.1)
-
   return (
     <section className="testimonials">
       <div className="testimonials__container">
-        <div ref={headRef as React.RefObject<HTMLDivElement>} className="testimonials__header reveal">
+        <div className="testimonials__header reveal">
           <p className="testimonials__label">Témoignages</p>
           <h2 className="testimonials__title">Ce que disent mes patients</h2>
         </div>
 
-        <div ref={cardsRef as React.RefObject<HTMLDivElement>} className="testimonials__grid reveal">
+        <div className="testimonials__grid reveal">
           {reviews.map((r, i) => (
             <article key={i} className="testimonials__card">
               <div className="testimonials__stars">★★★★★</div>

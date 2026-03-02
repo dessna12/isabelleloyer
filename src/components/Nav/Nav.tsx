@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react'
-import { Link, NavLink, useLocation } from 'react-router-dom'
 import './Nav.css'
 
 const links = [
@@ -12,10 +11,13 @@ const links = [
 ]
 
 export default function Nav() {
-  const { pathname } = useLocation()
-  const isHome = pathname === '/'
+  const [pathname, setPathname] = useState('')
   const [scrolled, setScrolled] = useState(false)
   const [menuOpen, setMenuOpen] = useState(false)
+
+  useEffect(() => {
+    setPathname(window.location.pathname)
+  }, [])
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 40)
@@ -23,22 +25,29 @@ export default function Nav() {
     return () => window.removeEventListener('scroll', onScroll)
   }, [])
 
+  const isHome = pathname === '/'
+
   return (
     <header className={`nav${!isHome || scrolled ? ' nav--scrolled' : ''}`}>
       <div className="nav__inner">
-        <Link to="/" className="nav__logo" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
+        <a href="/" className="nav__logo" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
           <img src="/images/logo.png" alt="Isabelle Loyer" />
-        </Link>
+        </a>
 
         <nav className="nav__links">
           {links.map(link => (
-            <NavLink key={link.to} to={link.to} className="nav__link" end={link.to === '/'}>
+            <a
+              key={link.to}
+              href={link.to}
+              className={`nav__link${pathname === link.to ? ' active' : ''}`}
+              aria-current={pathname === link.to ? 'page' : undefined}
+            >
               {link.label}
-            </NavLink>
+            </a>
           ))}
-          <Link to="/#contact" className="nav__cta">
+          <a href="/#contact" className="nav__cta">
             Prendre rendez-vous
-          </Link>
+          </a>
         </nav>
 
         <button
@@ -53,20 +62,20 @@ export default function Nav() {
 
       <div className={`nav__mobile${menuOpen ? ' nav__mobile--open' : ''}`} aria-hidden={!menuOpen}>
         {links.map(link => (
-          <NavLink
+          <a
             key={link.to}
-            to={link.to}
-            className="nav__mobile-link"
+            href={link.to}
+            className={`nav__mobile-link${pathname === link.to ? ' active' : ''}`}
+            aria-current={pathname === link.to ? 'page' : undefined}
             onClick={() => setMenuOpen(false)}
-            end={link.to === '/'}
             tabIndex={menuOpen ? 0 : -1}
           >
             {link.label}
-          </NavLink>
+          </a>
         ))}
-        <Link to="/#contact" className="nav__mobile-cta" onClick={() => setMenuOpen(false)} tabIndex={menuOpen ? 0 : -1}>
+        <a href="/#contact" className="nav__mobile-cta" onClick={() => setMenuOpen(false)} tabIndex={menuOpen ? 0 : -1}>
           Prendre rendez-vous
-        </Link>
+        </a>
       </div>
     </header>
   )

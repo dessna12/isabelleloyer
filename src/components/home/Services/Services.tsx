@@ -1,4 +1,3 @@
-import { useReveal } from '../../../hooks/useReveal'
 import './Services.css'
 
 const individualItems = [
@@ -17,20 +16,17 @@ const coupleItems = [
 ]
 
 export default function Services() {
-  const headRef = useReveal()
-  const cardsRef = useReveal(0.1)
-
   return (
     <section id="services" className="services">
       <div className="services__container">
-        <div ref={headRef as React.RefObject<HTMLDivElement>} className="services__header reveal">
+        <div className="services__header reveal">
           <p className="services__label">Accompagnement</p>
           <h2 className="services__title">
             Thérapie individuelle et thérapie de couple
           </h2>
         </div>
 
-        <div ref={cardsRef as React.RefObject<HTMLDivElement>} className="services__grid reveal">
+        <div className="services__grid reveal">
           <div className="services__card services__card--dark">
             <p className="services__card-label">Thérapie individuelle</p>
             <h3 className="services__card-title">Pour avancer à votre rythme</h3>

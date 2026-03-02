@@ -1,5 +1,4 @@
 import { PiGraduationCap, PiBrain, PiFlowerLotus, PiPersonArmsSpread } from 'react-icons/pi'
-import { useReveal } from '../../../hooks/useReveal'
 import './Training.css'
 
 const formations = [
@@ -26,18 +25,15 @@ const formations = [
 ]
 
 export default function Training() {
-  const headRef = useReveal()
-  const timelineRef = useReveal(0.08)
-
   return (
     <section className="training">
       <div className="training__container">
-        <div ref={headRef as React.RefObject<HTMLDivElement>} className="training__header reveal">
+        <div className="training__header reveal">
           <p className="training__label">Parcours & formation</p>
           <h2 className="training__title">Un accompagnement ancré dans une formation solide</h2>
         </div>
 
-        <div ref={timelineRef as React.RefObject<HTMLDivElement>} className="training__timeline reveal">
+        <div className="training__timeline reveal">
           {formations.map((f, i) => {
             const Icon = f.icon
             return (
