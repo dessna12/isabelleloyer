@@ -1,0 +1,55 @@
+---
+import Nav from '../components/Nav/Nav'
+import Footer from '../components/Footer/Footer'
+import '../styles/global.css'
+
+interface Props {
+  title: string
+  description?: string
+}
+
+const { title, description = 'Isabelle Loyer — Thérapeute spécialisée dans les traumas et les épreuves de vie. Cabinet au Cannet (Alpes-Maritimes) et en visioconférence.' } = Astro.props
+---
+
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="icon" type="image/png" href="/images/logo.png" />
+  </head>
+  <body>
+    <Nav client:load />
+    <slot />
+    <Footer />
+
+    <script>
+      // Global IntersectionObserver for .reveal elements
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('visible')
+              observer.unobserve(entry.target)
+            }
+          })
+        },
+        { threshold: 0.1 }
+      )
+
+      function observeRevealElements() {
+        document.querySelectorAll('.reveal').forEach((el) => {
+          observer.observe(el)
+        })
+      }
+
+      // Run on initial load
+      observeRevealElements()
+
+      // Re-run after React hydration (client:load components may add elements)
+      document.addEventListener('astro:page-load', observeRevealElements)
+    </script>
+  </body>
+</html>

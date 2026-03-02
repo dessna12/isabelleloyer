@@ -1,5 +1,3 @@
-import { Link } from 'react-router-dom'
-import { useReveal } from '../../../hooks/useReveal'
 import './Approach.css'
 
 const goals = [
@@ -26,13 +24,10 @@ const goals = [
 ]
 
 export default function Approach() {
-  const headRef = useReveal()
-  const cardsRef = useReveal(0.1)
-
   return (
     <section id="approach" className="approach">
       <div className="approach__container">
-        <div ref={headRef as React.RefObject<HTMLDivElement>} className="approach__header reveal">
+        <div className="approach__header reveal">
           <p className="approach__label">Mon approche</p>
           <h2 className="approach__title">
             Une thérapie centrée sur le système nerveux et la sécurité intérieure
@@ -44,7 +39,7 @@ export default function Approach() {
           </p>
         </div>
 
-        <div ref={cardsRef as React.RefObject<HTMLDivElement>} className="approach__grid reveal">
+        <div className="approach__grid reveal">
           {goals.map((g, i) => (
             <div key={i} className="approach__card">
               <div className="approach__card-header">
@@ -60,10 +55,10 @@ export default function Approach() {
           <p className="approach__profile-quote">
             "Un espace sûr pour explorer ce que les mots ont du mal à atteindre."
           </p>
-          <Link to="/accompagnements" className="approach__link">
+          <a href="/accompagnements" className="approach__link">
             En savoir plus sur mes approches
             <span className="approach__link-arrow" aria-hidden>→</span>
-          </Link>
+          </a>
         </div>
       </div>
     </section>

@@ -1,14 +1,10 @@
-import { useReveal } from '../../../hooks/useReveal'
 import './Location.css'
 
 export default function Location() {
-  const leftRef = useReveal()
-  const rightRef = useReveal(0.1)
-
   return (
     <section id="contact" className="location">
       <div className="location__grid">
-        <div ref={leftRef as React.RefObject<HTMLDivElement>} className="reveal">
+        <div className="reveal">
           <p className="location__label">Consultation</p>
           <h2 className="location__title">Au Cannet ou en visioconférence</h2>
           <p className="location__intro">
@@ -54,7 +50,7 @@ export default function Location() {
           </div>
         </div>
 
-        <div ref={rightRef as React.RefObject<HTMLDivElement>} className="location__media reveal">
+        <div className="location__media reveal">
           <img
             src="/images/cabinet de consultation.webp"
             alt="Cabinet de consultation Isabelle Loyer"

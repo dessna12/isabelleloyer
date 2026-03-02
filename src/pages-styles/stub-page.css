@@ -1,0 +1,35 @@
+.stub-page {
+  padding-top: 72px;
+}
+
+.stub-page__inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: clamp(5rem, 10vw, 9rem) 2rem;
+}
+
+.stub-page__label {
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: #B5835A;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  margin-bottom: 1.25rem;
+}
+
+.stub-page__title {
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 500;
+  color: var(--color-text);
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+}
+
+.stub-page__text {
+  font-size: 1rem;
+  font-weight: 300;
+  color: var(--color-text-muted);
+  line-height: 1.8;
+  max-width: 640px;
+}

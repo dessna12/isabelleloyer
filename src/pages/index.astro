@@ -1,0 +1,27 @@
+---
+import Layout from '../layouts/Layout.astro'
+import Hero from '../components/home/Hero/Hero'
+import Problems from '../components/home/Problems/Problems'
+import About from '../components/home/About/About'
+import Approach from '../components/home/Approach/Approach'
+import Services from '../components/home/Services/Services'
+import Training from '../components/home/Training/Training'
+import Location from '../components/home/Location/Location'
+import Testimonials from '../components/home/Testimonials/Testimonials'
+---
+
+<Layout
+  title="Isabelle Loyer — Thérapeute Traumatismes & Relations | Le Cannet"
+  description="Thérapeute spécialisée dans les traumas, les blessures relationnelles et les épreuves de vie. Cabinet au Cannet (Alpes-Maritimes) et consultations en visioconférence."
+>
+  <main>
+    <Hero client:load />
+    <Problems client:load />
+    <About client:load />
+    <Approach client:load />
+    <Services client:load />
+    <Training client:load />
+    <Testimonials client:load />
+    <Location client:load />
+  </main>
+</Layout>

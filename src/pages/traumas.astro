@@ -1,8 +1,11 @@
-import './Trauma.css'
+---
+import Layout from '../layouts/Layout.astro'
 import TraumaHero from '../components/trauma/TraumaHero/TraumaHero'
-import SectionCard, { type Section } from '../components/trauma/SectionCard/SectionCard'
+import SectionCard from '../components/trauma/SectionCard/SectionCard'
+import TraumaQuote from '../components/trauma/TraumaQuote/TraumaQuote'
+import '../pages-styles/trauma.css'
 
-const sections: Section[] = [
+const sections = [
   {
     number: '01',
     title: "L'emprise et les blessures relationnelles",
@@ -48,18 +51,19 @@ const sections: Section[] = [
       "Nous travaillons à restaurer un sentiment de sécurité dans la relation en comprenant comment vos histoires personnelles influencent vos réactions mutuelles.",
   },
 ]
+---
 
-export default function Trauma() {
-  return (
-    <main className="trauma-main">
+<Layout
+  title="Comprendre ses traumas — Isabelle Loyer, thérapeute"
+  description="Emprise, blessures d'enfance, compulsions, trauma de couple : découvrez comment ces expériences s'inscrivent dans votre vie et comment la thérapie peut vous aider à les intégrer."
+>
+  <main class="trauma-main">
+    <TraumaHero client:load />
 
-      <TraumaHero />
+    <section class="trauma-sections">
+      {sections.map(s => <SectionCard client:load s={s} />)}
+    </section>
 
-      <section className="trauma-sections">
-        {sections.map(s => <SectionCard key={s.number} s={s} />)}
-      </section>
-
-
-    </main>
-  )
-}
+    <TraumaQuote client:load />
+  </main>
+</Layout>

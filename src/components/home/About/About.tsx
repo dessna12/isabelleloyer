@@ -1,4 +1,3 @@
-import { useReveal } from '../../../hooks/useReveal'
 import './About.css'
 
 const pillars = [
@@ -7,29 +6,26 @@ const pillars = [
     desc: "Nous ne forçons pas les souvenirs. Nous travaillons sur ce qui est présent pour vous, ici et maintenant, en douceur."
   },
   {
-    title: "L'approche globale",
-    desc: "Un travail qui prend en compte le corps, les émotions et le système relationnel pour apaiser la peur, la sidération ou la honte."
+    title: " Une approche globale",
+    desc: "Mon travail prend en compte le corps, les émotions et les relations pour apaiser la peur, la sidération ou la honte."
   },
   {
-    title: "L'intégration durable",
-    desc: "Utiliser des outils comme l'ICV pour « prouver » à votre système nerveux que le passé est enfin terminé et restaurer votre sécurité."
+    title: "Une intégration durable",
+    desc: "Grâce à des outils comme l’ICV, nous aidons votre système nerveux à intégrer que le danger est passé et à restaurer un sentiment de sécurité profonde."
   }
 ]
 
 const results = [
-  "Retrouver de la clarté et ne plus douter de vous-même.",
-  "Apaiser les tensions corporelles et les réactions émotionnelles disproportionnées.",
-  "Se sentir enfin légitime et à sa place dans vos relations intérieure."
+  "Retrouver de la clarté et de la confiance en vous.",
+  "Apaiser les tensions corporelles et les réactions émotionnelles intenses.",
+  "Vous sentir légitime et à votre place dans vos relations."
 ]
 
 export default function About() {
-  const imgRef = useReveal(0.1)
-  const textRef = useReveal(0.1)
-
   return (
     <section id="about" className="about">
       <div className="about__grid">
-        <div ref={imgRef as React.RefObject<HTMLDivElement>} className="about__image-wrapper reveal">
+        <div className="about__image-wrapper reveal">
           <div className="about__image-bg" />
           <img
             src="/images/isabelle-laughing.webp"
@@ -38,15 +34,15 @@ export default function About() {
           />
         </div>
 
-        <div ref={textRef as React.RefObject<HTMLDivElement>} className="about__text reveal">
-          <p className="about__label">Isabelle Loyer</p>
+        <div className="about__text reveal">
+          <p className="about__label">Pourquoi cet accompagnement ?</p>
 
           <h2 className="about__title">
             Un cadre sécurisant pour une reconstruction en douceur
           </h2>
 
           <p className="about__intro">
-            Au sein de mon cabinet au Cannet ou en visioconférence, je vous propose un espace de soin sans jugement basé sur{"\u00A0"}:
+            Au sein de mon cabinet au Cannet ou en visioconférence, je vous propose un espace de soin sans jugement. Mon accompagnement repose sur 3 piliers{"\u00A0"}:
           </p>
 
           <ul className="about__list">
@@ -61,7 +57,7 @@ export default function About() {
           </ul>
 
           <div className="about__results">
-            <p className="about__results-label">Les résultats vers lesquels nous tendons</p>
+            <p className="about__results-label">Les changements que vous pouvez attendre</p>
             <ul className="about__results-list">
               {results.map((r, i) => (
                 <li key={i} className="about__results-item">
