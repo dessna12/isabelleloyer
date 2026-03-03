@@ -18,11 +18,10 @@ export default function AccompCard({ a }: { a: Accomp }) {
     <article className={`accomp-card${isOpen ? ' accomp-card--open' : ''}`}>
       <button className="accomp-card__header" onClick={() => setIsOpen(o => !o)} aria-expanded={isOpen}>
         <div className="accomp-card__header-top">
-          <span className="accomp-card__number">{a.number}</span>
+          <span className="accomp-card__eyebrow">{a.title}</span>
           <span className="accomp-card__toggle">{isOpen ? '−' : '+'}</span>
         </div>
         <p className="accomp-card__quote">« {a.quote} »</p>
-        <p className="accomp-card__title">{a.title}</p>
         <p className="accomp-card__type">{a.type}</p>
       </button>
 

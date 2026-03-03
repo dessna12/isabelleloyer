@@ -148,3 +148,29 @@
   color: var(--color-text-brown);
   line-height: 1.6;
 }
+
+.about__internal-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-top: 1.75rem;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--color-forest);
+  transition: color 0.2s ease, gap 0.2s ease;
+}
+
+.about__internal-link:hover {
+  color: var(--color-forest-hover);
+  gap: 0.9rem;
+}
+
+.about__internal-arrow {
+  font-size: 1rem;
+  transition: transform 0.2s ease;
+}
+
+.about__internal-link:hover .about__internal-arrow {
+  transform: translateX(3px);
+}

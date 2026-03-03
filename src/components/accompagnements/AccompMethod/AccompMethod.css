@@ -75,4 +75,27 @@
     grid-template-columns: 1fr;
     gap: 1.5rem;
   }
+
+  .accomp-method__item {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 0.6rem;
+  }
+
+  .accomp-method__number {
+    display: inline;
+    margin-bottom: 0;
+    font-size: 1.4rem;
+  }
+
+  .accomp-method__item-title {
+    display: inline;
+    margin-bottom: 0;
+  }
+
+  .accomp-method__item-desc {
+    width: 100%;
+    margin-top: 0.5rem;
+  }
 }

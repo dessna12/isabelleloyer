@@ -25,12 +25,12 @@
   margin-bottom: 1rem;
 }
 
-.accomp-card__number {
-  font-family: "Playfair Display", Georgia, serif;
-  font-size: 0.85rem;
-  font-weight: 400;
+.accomp-card__eyebrow {
+  font-size: 0.7rem;
+  font-weight: 500;
   color: #B5835A;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
 }
 
 .accomp-card__toggle {
@@ -52,20 +52,12 @@
   max-width: 680px;
 }
 
-.accomp-card__title {
-  font-family: "Playfair Display", Georgia, serif;
-  font-size: clamp(1rem, 2vw, 1.2rem);
-  font-weight: 600;
-  color: #2A1F1A;
-  margin-bottom: 0.3rem;
-}
 
 .accomp-card__type {
-  font-size: 0.7rem;
-  font-weight: 400;
-  color: #B5835A;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
+  font-size: 0.85rem;
+  font-weight: 300;
+  color: #6B5448;
+  font-style: italic;
 }
 
 /* ── BODY (accordéon) ── */
