@@ -4,6 +4,7 @@ import AProposHero from '../components/a-propos/AProposHero/AProposHero'
 import AProposApproche from '../components/a-propos/AProposApproche/AProposApproche'
 import AProposEthique from '../components/a-propos/AProposEthique/AProposEthique'
 import AProposFormations from '../components/a-propos/AProposFormations/AProposFormations'
+import Echange from '../components/shared/Echange/Echange'
 import '../pages-styles/a-propos.css'
 ---
 
@@ -17,6 +18,8 @@ import '../pages-styles/a-propos.css'
     <AProposEthique client:load />
     <AProposFormations client:load />
 
+    <Echange client:load />
+
     <div class="apropos-closing reveal">
       <p class="apropos-closing__text">
         Au-delà de ma boîte à outils thérapeutique, c'est ma présence que je mets à votre
@@ -24,6 +27,15 @@ import '../pages-styles/a-propos.css'
         ce que votre corps puisse enfin se relâcher et que vous puissiez poser ce fardeau.
       </p>
       <p class="apropos-closing__signature">Vous n'êtes plus seule face à ce vécu.</p>
+    </div>
+
+    <div class="apropos-cta reveal">
+      <h2 class="apropos-cta__title">Prendre rendez-vous</h2>
+      <p class="apropos-cta__text">
+        Faire le premier pas est souvent le plus difficile. Je propose un premier échange de 15min Je vous reçois au Cannet
+        ou en visioconférence.
+      </p>
+      <a href="#contact" class="apropos-cta__link">Réserver une séance</a>
     </div>
   </main>
 </Layout>

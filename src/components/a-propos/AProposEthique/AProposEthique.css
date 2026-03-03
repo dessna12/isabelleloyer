@@ -66,4 +66,27 @@
     grid-template-columns: 1fr;
     gap: 1.5rem;
   }
+
+  .apropos-ethique__item {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 0.6rem;
+  }
+
+  .apropos-ethique__number {
+    display: inline;
+    margin-bottom: 0;
+    font-size: 1.4rem;
+  }
+
+  .apropos-ethique__item-title {
+    display: inline;
+    margin-bottom: 0;
+  }
+
+  .apropos-ethique__item-text {
+    width: 100%;
+    margin-top: 0.5rem;
+  }
 }

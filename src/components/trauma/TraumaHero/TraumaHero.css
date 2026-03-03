@@ -60,26 +60,6 @@
   z-index: 1;
 }
 
-.trauma-hero__quote {
-  position: absolute;
-  inset: 0;
-  z-index: 2;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 2rem;
-  margin: 0 auto;
-  font-family: "Playfair Display", Georgia, serif;
-  font-size: clamp(1.1rem, 2.5vw, 1.6rem);
-  font-weight: 400;
-  font-style: italic;
-  color: rgba(250, 248, 245, 0.92);
-  line-height: 1.65;
-  text-align: center;
-  text-shadow: 0 1px 6px rgba(42, 31, 26, 0.5);
-  max-width: 680px;
-  margin-inline: auto;
-}
 
 /* ── MOBILE ── */
 @media (max-width: 768px) {
@@ -88,6 +68,6 @@
   }
 
   .trauma-hero__image-wrap {
-    height: 240px;
+    height: 200px;
   }
 }
