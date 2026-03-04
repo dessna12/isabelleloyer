@@ -3,7 +3,7 @@ import './Footer.css'
 const navLinks = [
   { label: 'Accueil', to: '/' },
   { label: 'Comprendre ses traumas', to: '/traumas' },
-  { label: 'Accompagnements', to: '/accompagnements' },
+  { label: 'Accompagnements', to: '/mes-accompagnements-therapeutiques' },
   { label: 'Thérapie de couple', to: '/therapie-de-couple' },
   { label: 'À propos', to: '/a-propos' },
   { label: 'Blog', to: '/blog' },

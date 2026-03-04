@@ -1,0 +1,88 @@
+.therapie-approche {
+  border-top: 1px solid #E8DDD7;
+}
+
+.therapie-approche__inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: clamp(3rem, 6vw, 5rem) 2rem;
+}
+
+.therapie-approche__label {
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: #B5835A;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.therapie-approche__title {
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: clamp(1.5rem, 3vw, 2.25rem);
+  font-weight: 500;
+  color: #2A1F1A;
+  margin-bottom: 0.75rem;
+  max-width: 680px;
+}
+
+.therapie-approche__intro {
+  font-size: 0.95rem;
+  font-weight: 300;
+  color: #6B5448;
+  line-height: 1.7;
+  max-width: 560px;
+  margin-bottom: 2.5rem;
+}
+
+.therapie-approche__steps {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 760px;
+}
+
+.therapie-approche__step {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  border-top: 1px solid #E8DDD7;
+  padding-top: 1.75rem;
+}
+
+.therapie-approche__step:first-child {
+  border-top: none;
+  padding-top: 0;
+}
+
+.therapie-approche__number {
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 1.75rem;
+  font-weight: 500;
+  color: #C4A882;
+  flex-shrink: 0;
+  line-height: 1;
+  width: 2rem;
+}
+
+.therapie-approche__step-title {
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #2A1F1A;
+  margin-bottom: 0.5rem;
+}
+
+.therapie-approche__step-text {
+  font-size: 0.9rem;
+  font-weight: 300;
+  color: #6B5448;
+  line-height: 1.8;
+}
+
+/* ── MOBILE ── */
+@media (max-width: 768px) {
+  .therapie-approche__step {
+    gap: 1rem;
+  }
+}

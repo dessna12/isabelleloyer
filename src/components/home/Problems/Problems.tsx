@@ -3,7 +3,7 @@ import './Problems.css'
 const symptoms = [
   <><em>Sortir de l'Emprise & de la Toxicité</em><br /> Pour ne plus douter de vos perceptions, sortir de la confusion et retrouver votre identité face à une relation dénigrante ou manipulatrice.</>,
   <><em>Réparer les Blessures d'Enfance </em><br /> Pour apaiser un manque de confiance profond ou un sentiment d'illégitimité né d'un climat familial insécurisant, d'une absence de limites ou d'un vécu incestuel</>,
-  <><em>Se reconstruire après une agression ou des violences </em> Pour libérer votre coprs de la sidération et de la peur après un viol, une agression sexuelle ou des violences conjugales. Un espace pour retrouver sécurité et dignité. </>,
+  <><em>Se reconstruire après une agression ou des violences </em><br />  Pour libérer votre coprs de la sidération et de la peur après un viol, une agression sexuelle ou des violences conjugales. Un espace pour retrouver sécurité et dignité. </>,
   <><em>Réguler les Compulsions & Addictions </em><br /> Pour comprendre comment l'alcool ou les troubles alimentaires (boulimie, hyperphagie) sont des tentatives de survie face à une angoisse ou un vide que vous ne maîtrisez plus.</>,
   <><em>Restaurer le Lien de Couple </em><br /> Pour sortir des disputes répétitives et comprendre comment vos histoires personnelles influencent votre relation et votre sentiment de sécurité aujourd'hui.</>
 ]

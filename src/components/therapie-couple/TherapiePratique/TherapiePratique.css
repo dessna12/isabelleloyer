@@ -1,0 +1,101 @@
+.therapie-pratique {
+  border-top: 1px solid #E8DDD7;
+}
+
+.therapie-pratique__inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: clamp(3rem, 6vw, 5rem) 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+/* ── DÉROULEMENT ── */
+.therapie-pratique__label {
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: #B5835A;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.therapie-pratique__title {
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: clamp(1.5rem, 3vw, 2.25rem);
+  font-weight: 500;
+  color: #2A1F1A;
+  margin-bottom: 2rem;
+  max-width: 520px;
+}
+
+.therapie-pratique__points {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.therapie-pratique__point {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.therapie-pratique__dot {
+  width: 6px;
+  height: 6px;
+  background: #C4A882;
+  border-radius: 50%;
+  flex-shrink: 0;
+  margin-top: 0.5rem;
+}
+
+.therapie-pratique__point-title {
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #2A1F1A;
+  display: block;
+  margin-bottom: 0.35rem;
+}
+
+.therapie-pratique__point-text {
+  font-size: 0.9rem;
+  font-weight: 300;
+  color: #6B5448;
+  line-height: 1.8;
+}
+
+/* ── CONJOINT ── */
+.therapie-pratique__conjoint {
+  background: #F2EDE6;
+  padding: 2.5rem;
+  align-self: center;
+}
+
+.therapie-pratique__conjoint-question {
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  font-weight: 500;
+  font-style: italic;
+  color: #2A1F1A;
+  margin-bottom: 1.25rem;
+  line-height: 1.4;
+}
+
+.therapie-pratique__conjoint-answer {
+  font-size: 0.9rem;
+  font-weight: 300;
+  color: #6B5448;
+  line-height: 1.8;
+}
+
+/* ── MOBILE ── */
+@media (max-width: 768px) {
+  .therapie-pratique__inner {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+}

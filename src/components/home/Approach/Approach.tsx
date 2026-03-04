@@ -55,7 +55,7 @@ export default function Approach() {
           <p className="approach__profile-quote">
             "Un espace sûr pour explorer ce que les mots ont du mal à atteindre."
           </p>
-          <a href="/accompagnements" className="approach__link">
+          <a href="/mes-accompagnements-therapeutiques" className="approach__link">
             En savoir plus sur mes approches
             <span className="approach__link-arrow" aria-hidden>→</span>
           </a>

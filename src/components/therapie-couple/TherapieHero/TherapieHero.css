@@ -1,0 +1,93 @@
+/* ── IMAGE ── */
+.therapie-hero__image-wrap {
+  height: clamp(160px, 22.5vw, 260px);
+  overflow: hidden;
+  position: relative;
+}
+
+.therapie-hero__image-bg {
+  position: absolute;
+  inset: 0;
+  background-image: url('/images/couple-hands.webp');
+  background-size: cover;
+  background-position: center;
+  filter: sepia(0.2) saturate(0.8) brightness(0.75);
+}
+
+.therapie-hero__image-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(44, 74, 60, 0.45) 0%,
+    rgba(196, 168, 130, 0.2) 100%
+  );
+  z-index: 1;
+}
+
+/* ── TEXT ── */
+.therapie-hero__text {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: clamp(3rem, 6vw, 5rem) 2rem 3rem;
+}
+
+.therapie-hero__label {
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: #B5835A;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  margin-bottom: 1.25rem;
+}
+
+.therapie-hero__title {
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: clamp(2rem, 4vw, 3.25rem);
+  font-weight: 500;
+  color: #2A1F1A;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+  max-width: 720px;
+}
+
+.therapie-hero__quote {
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: clamp(1rem, 2vw, 1.3rem);
+  font-weight: 400;
+  font-style: italic;
+  color: #B5835A;
+  padding-left: 1.25rem;
+  border-left: 2px solid #C4A882;
+  margin-bottom: 1.75rem;
+  line-height: 1.5;
+}
+
+.therapie-hero__intro {
+  font-size: 1rem;
+  font-weight: 300;
+  color: #6B5448;
+  line-height: 1.8;
+  max-width: 640px;
+  margin-bottom: 1rem;
+}
+
+.therapie-hero__sub {
+  font-size: 0.95rem;
+  font-weight: 400;
+  font-style: italic;
+  color: #B5835A;
+  line-height: 1.7;
+  max-width: 640px;
+}
+
+/* ── MOBILE ── */
+@media (max-width: 768px) {
+  .therapie-hero__image-wrap {
+    height: 200px;
+  }
+
+  .therapie-hero__text {
+    padding: 2.5rem 1.75rem 2rem;
+  }
+}

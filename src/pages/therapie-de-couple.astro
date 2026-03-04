@@ -1,20 +1,30 @@
 ---
 import Layout from '../layouts/Layout.astro'
-import '../pages-styles/stub-page.css'
+import TherapieHero from '../components/therapie-couple/TherapieHero/TherapieHero'
+import TherapiePourquoi from '../components/therapie-couple/TherapiePourquoi/TherapiePourquoi'
+import TherapieApproche from '../components/therapie-couple/TherapieApproche/TherapieApproche'
+import TherapiePratique from '../components/therapie-couple/TherapiePratique/TherapiePratique'
+import Echange from '../components/shared/Echange/Echange'
+import '../pages-styles/therapie-de-couple.css'
 ---
 
 <Layout
   title="Thérapie de couple — Isabelle Loyer, thérapeute"
   description="Thérapie de couple pour sortir des conflits répétitifs et retrouver la sécurité dans la relation. Isabelle Loyer au Cannet et en visioconférence."
 >
-  <main class="stub-page">
-    <section class="stub-page__inner">
-      <p class="stub-page__label">Services</p>
-      <h1 class="stub-page__title">Thérapie de couple</h1>
-      <p class="stub-page__text">
-        Cette page est en cours de rédaction. Revenez bientôt pour en savoir plus
-        sur l'accompagnement en thérapie de couple.
+  <main class="therapie-main">
+    <TherapieHero client:load />
+    <TherapiePourquoi client:load />
+    <TherapieApproche client:load />
+    <TherapiePratique client:load />
+
+    <div class="therapie-cta reveal">
+      <h2 class="therapie-cta__title">Prendre rendez-vous</h2>
+      <p class="therapie-cta__text">
+        Faire le premier pas est souvent le plus difficile. Je vous reçois au Cannet
+        ou en visioconférence, seul(e) ou à deux.
       </p>
-    </section>
+      <a href="#contact" class="therapie-cta__link">Réserver une séance</a>
+    </div>
   </main>
 </Layout>

@@ -68,7 +68,7 @@ export default function About() {
             </ul>
           </div>
 
-          <a href="/accompagnements" className="about__internal-link">
+          <a href="/mes-accompagnements-therapeutiques" className="about__internal-link">
             Comment je peux vous aider ?
             <span className="about__internal-arrow" aria-hidden>→</span>
           </a>
