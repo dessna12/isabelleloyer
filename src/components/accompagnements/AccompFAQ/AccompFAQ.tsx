@@ -7,11 +7,11 @@ const faqs = [
     a: "Oui. Mon approche ne nécessite pas de raconter chaque détail. Nous travaillons sur la trace que le passé a laissée dans votre corps et vos émotions aujourd'hui. Votre corps se souvient pour vous, et c'est là que nous intervenons.",
   },
   {
-    q: "J'ai peur d'être submergée par mes émotions en séance.",
+    q: "J'ai peur d'être submergé·e par mes émotions en séance.",
     a: "C'est une crainte très fréquente. C'est pourquoi nous commençons toujours par renforcer vos ressources et votre sécurité intérieure. On ne force jamais une porte fermée : nous avançons à votre rythme, sans jamais vous bousculer.",
   },
   {
-    q: "Est-ce que je peux venir si je ne suis pas encore prête à quitter une relation difficile ?",
+    q: "Est-ce que je peux venir si je ne suis pas encore prêt·e à quitter une relation difficile ?",
     a: "Absolument. La thérapie est un espace pour vous retrouver, pas pour vous pousser à agir malgré vous. Le changement extérieur vient naturellement quand la sécurité intérieure est restaurée.",
   },
 ]

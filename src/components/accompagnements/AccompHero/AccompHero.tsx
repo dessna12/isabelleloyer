@@ -9,7 +9,7 @@ export default function AccompHero() {
       </div>
       <div className="accomp-hero__text">
         <p className="accomp-hero__label">Accompagnements</p>
-        <h1 className="accomp-hero__title">Comment je vous aide ?</h1>
+        <h1 className="accomp-hero__title">Comment je vous aide&nbsp;?</h1>
         <p className="accomp-hero__intro">
           Je ne vous propose pas simplement des outils, mais une présence pour vous aider
           à sortir de l'impasse et remettre la vie en mouvement là où elle s'était figée.
