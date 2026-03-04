@@ -1,0 +1,71 @@
+.therapie-pourquoi {
+  background: #F2EDE6;
+}
+
+.therapie-pourquoi__inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: clamp(3rem, 6vw, 5rem) 2rem;
+}
+
+.therapie-pourquoi__label {
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: #B5835A;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.therapie-pourquoi__title {
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: clamp(1.5rem, 3vw, 2.25rem);
+  font-weight: 500;
+  color: #2A1F1A;
+  margin-bottom: 0.75rem;
+}
+
+.therapie-pourquoi__intro {
+  font-size: 0.95rem;
+  font-weight: 300;
+  color: #6B5448;
+  line-height: 1.7;
+  max-width: 560px;
+  margin-bottom: 2.5rem;
+}
+
+.therapie-pourquoi__grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 760px;
+}
+
+.therapie-pourquoi__item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.25rem;
+}
+
+.therapie-pourquoi__icon {
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 1.4rem;
+  color: #B5835A;
+  flex-shrink: 0;
+  line-height: 1.3;
+}
+
+.therapie-pourquoi__item-title {
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: #2A1F1A;
+  margin-bottom: 0.35rem;
+}
+
+.therapie-pourquoi__item-text {
+  font-size: 0.9rem;
+  font-weight: 300;
+  color: #6B5448;
+  line-height: 1.8;
+}

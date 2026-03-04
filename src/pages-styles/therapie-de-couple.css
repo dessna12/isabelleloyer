@@ -1,0 +1,45 @@
+/* ── MAIN ── */
+.therapie-main {
+  padding-top: 60px;
+}
+
+/* ── CTA ── */
+.therapie-cta {
+  text-align: center;
+  padding: 5rem 2rem 6rem;
+  background: #2C4A3C;
+}
+
+.therapie-cta__title {
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: 500;
+  color: #FAF8F5;
+  margin-bottom: 1rem;
+}
+
+.therapie-cta__text {
+  font-size: 1rem;
+  font-weight: 300;
+  color: rgba(250, 248, 245, 0.8);
+  line-height: 1.8;
+  max-width: 480px;
+  margin: 0 auto 2rem;
+}
+
+.therapie-cta__link {
+  display: inline-block;
+  padding: 0.85rem 2.25rem;
+  background-color: #C4A882;
+  color: #2A1F1A;
+  font-size: 0.875rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+.therapie-cta__link:hover {
+  background-color: #B0946E;
+}

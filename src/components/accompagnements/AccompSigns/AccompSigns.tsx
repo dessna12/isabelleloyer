@@ -2,7 +2,7 @@ import './AccompSigns.css'
 
 const signs = [
   "Vous sursautez au moindre bruit ou vivez en état d'alerte permanent.",
-  "Vous avez l'impression d'être « déconnectée » de votre corps ou de vos émotions.",
+  "Vous avez l'impression d'être « déconnecté·e » de votre corps ou de vos émotions.",
   "Vous ressentez une fatigue psychique que le sommeil ne répare pas.",
   "Vous vous excusez en permanence, même quand vous n'êtes pas responsable.",
 ]
@@ -14,7 +14,7 @@ export default function AccompSigns() {
         <p className="accomp-signs__label">À reconnaître</p>
         <h2 className="accomp-signs__title">Les signes qui ne trompent pas</h2>
         <p className="accomp-signs__sub">
-          Si vous cochez plusieurs de ces cases, votre système est probablement en état de « survie ».
+          Si vous cochez plusieurs de ces cases, votre système est probablement en état de «&nbsp;survie&nbsp;».
         </p>
         <ul className="accomp-signs__list">
           {signs.map((sign, i) => (
