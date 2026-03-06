@@ -11,7 +11,7 @@ export default function Hero() {
 
           <p className="hero__name">Isabelle Loyer</p>
 
-          <p className="hero__eyebrow">Thérapeute Traumatismes et Relations <br /> Le Cannet · Alpes-Maritimes · En ligne</p>
+          <p className="hero__eyebrow">Thérapie des traumatismes et blessures relationnelles <br /> Le Cannet · Alpes-Maritimes · En ligne</p>
 
 
           <h1 className="hero__title">
