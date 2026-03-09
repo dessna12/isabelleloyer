@@ -20,7 +20,7 @@ export default function TherapieHero() {
         </p>
         <p className="therapie-hero__sub">
           Mon cabinet est un espace tiers, protégé des tensions du quotidien. Je ne suis ni juge,
-          ni avocat : dans cet espace, mon patient, c'est le lien qui vous unit.
+          ni avocat : je veille à ce que chacun puisse s'exprimer sans crainte d'être interrompu ou critiqué.
         </p>
       </div>
     </div>

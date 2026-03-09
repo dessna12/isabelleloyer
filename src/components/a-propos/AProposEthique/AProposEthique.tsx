@@ -3,7 +3,7 @@ import './AProposEthique.css'
 const piliers = [
   {
     number: '1',
-    title: 'Le non-jugement absolu',
+    title: 'Le non-jugement',
     text: "Quels que soient vos choix passés, vos mécanismes de survie (compulsions, addictions) ou vos doutes, vous trouverez ici une écoute inconditionnelle.",
   },
   {

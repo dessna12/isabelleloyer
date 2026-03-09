@@ -25,8 +25,7 @@ export default function AccompMethod() {
         <p className="accomp-method__label">Ma méthode</p>
         <h2 className="accomp-method__title">Un cadre sécurisant et actif</h2>
         <p className="accomp-method__sub">
-          Je ne propose pas une écoute passive. Mon approche est intégrative — nous travaillons
-          sur trois niveaux indissociables.
+          Je propose une écoute active et une approche intégrative, ce qui signifie que nous travaillons sur trois niveaux indissociables&nbsp;:
         </p>
         <div className="accomp-method__grid">
           {levels.map(({ number, label, desc }) => (

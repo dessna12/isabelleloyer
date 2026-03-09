@@ -13,11 +13,6 @@ const etapes = [
   },
   {
     number: '3',
-    title: 'Une approche ancrée dans le présent',
-    text: "Nous apprendrons ensemble à repérer les signes physiques de la colère ou de la fermeture (cœur qui bat, souffle court, corps qui se fige). Identifier ces signaux avant qu'ils ne prennent le dessus permet de désamorcer les conflits avant qu'ils ne deviennent destructeurs.",
-  },
-  {
-    number: '4',
     title: 'La création d\'une bulle sécurisante',
     text: "Le cabinet devient un espace neutre où l'on apprend à exprimer ses besoins sans attaquer l'autre.",
   },

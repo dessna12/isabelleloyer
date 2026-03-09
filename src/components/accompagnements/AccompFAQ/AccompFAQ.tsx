@@ -8,7 +8,7 @@ const faqs = [
   },
   {
     q: "J'ai peur d'être submergé·e par mes émotions en séance.",
-    a: "c'est une crainte légitime. C'est pourquoi, nous cherchons ensemble ce qui, aujourd'hui, vous fait du bien ou vous stabilise (une sensation physique, un souvenir apaisant, une respiration spécifique). Nous créons ainsi vos propres points d'appui pour que vous puissiez traverser vos émotions sans jamais perdre pied. On ne force jamais une porte fermée : nous avançons à votre rythme, en toute sécurité",
+    a: "C'est une crainte légitime. Nous cherchons ensemble ce qui, aujourd'hui, vous fait du bien ou vous stabilise (une sensation physique, un souvenir apaisant). Nous créons ainsi vos propres points d'appui pour que vous puissiez traverser vos émotions sans jamais perdre pied.",
   },
   {
     q: "Est-ce que je peux venir si je ne suis pas encore prêt·e à quitter une relation difficile ?",
