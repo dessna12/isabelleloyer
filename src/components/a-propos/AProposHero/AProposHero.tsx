@@ -8,7 +8,7 @@ export default function AProposHero() {
           <p className="apropos-hero__label">À propos</p>
           <h1 className="apropos-hero__title">Isabelle Loyer</h1>
           <p className="apropos-hero__quote">
-            « Libérer les empreintes du passé pour retrouver l'équilibre du corps et de l'esprit. »
+            Libérer les empreintes du passé pour retrouver l'équilibre du corps et de l'esprit.
           </p>
           <p className="apropos-hero__intro">
             Je suis Isabelle Loyer, thérapeute spécialisée en psychotraumatismes et dans

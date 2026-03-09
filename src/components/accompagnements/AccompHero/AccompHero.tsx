@@ -9,12 +9,9 @@ export default function AccompHero() {
       </div>
       <div className="accomp-hero__text">
         <p className="accomp-hero__label">Accompagnements</p>
-        <h1 className="accomp-hero__title">Comment je vous aide&nbsp;?</h1>
+        <h1 className="accomp-hero__title">Se reconnaître pour commencer à guérir</h1>
         <p className="accomp-hero__intro">
-          Je ne vous propose pas simplement des outils, mais une présence pour vous aider
-          à sortir de l'impasse et remettre la vie en mouvement là où elle s'était figée.
-          Mon rôle est de vous offrir un espace où votre vécu est enfin reconnu et où
-          votre système nerveux peut apprendre à s'apaiser.
+          Au-delà des techniques, je vous offre une présence réelle et une écoute qui ne juge rien. C’est dans cet espace de confiance que votre corps peut enfin lâcher prise.
         </p>
         <p className="accomp-hero__sub">
           Le trauma et l'emprise ne se soignent pas par la seule volonté. Ils demandent
