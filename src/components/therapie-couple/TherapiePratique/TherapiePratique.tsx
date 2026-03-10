@@ -24,7 +24,7 @@ export default function TherapiePratique() {
               <div>
                 <strong className="therapie-pratique__point-title">Une vision globale</strong>
                 <p className="therapie-pratique__point-text">
-                  je regarde le couple, mais aussi l'histoire de chacun, car on ne vient
+                  Je regarde le couple, mais aussi l'histoire de chacun, car on ne vient
                   jamais dans une relation « les mains vides ».
                 </p>
               </div>
