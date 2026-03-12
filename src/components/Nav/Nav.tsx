@@ -45,7 +45,7 @@ export default function Nav() {
               {link.label}
             </a>
           ))}
-          <a href="/#contact" className="nav__cta">
+          <a href="https://calendly.com/isabelle-loyerrollot/nouvelle-reunion" target="_blank" rel="noopener noreferrer" className="nav__cta">
             Prendre rendez-vous
           </a>
         </nav>
@@ -73,7 +73,7 @@ export default function Nav() {
             {link.label}
           </a>
         ))}
-        <a href="/#contact" className="nav__mobile-cta" onClick={() => setMenuOpen(false)} tabIndex={menuOpen ? 0 : -1}>
+        <a href="https://calendly.com/isabelle-loyerrollot/nouvelle-reunion" target="_blank" rel="noopener noreferrer" className="nav__mobile-cta" onClick={() => setMenuOpen(false)} tabIndex={menuOpen ? 0 : -1}>
           Prendre rendez-vous
         </a>
       </div>

@@ -37,7 +37,7 @@ export default function Echange({ freeCall = false }: { freeCall?: boolean }) {
                   gratuit de 15 minutes — sans engagement, pour que vous puissiez me poser
                   vos questions et sentir si ce cadre vous correspond.
                 </p>
-                <a href="#contact" className="echange__freecall-link">
+                <a href="https://calendly.com/isabelle-loyerrollot/nouvelle-reunion" target="_blank" rel="noopener noreferrer" className="echange__freecall-link">
                   Réserver un échange gratuit <span aria-hidden>→</span>
                 </a>
               </div>

@@ -29,7 +29,7 @@ export default function Hero() {
           </p>
 
           <div className="hero__actions">
-            <a href="#contact" className="hero__cta-primary">
+            <a href="https://calendly.com/isabelle-loyerrollot/nouvelle-reunion" target="_blank" rel="noopener noreferrer" className="hero__cta-primary">
               Prendre rendez-vous
             </a>
             <a href="#problems" className="hero__cta-secondary">

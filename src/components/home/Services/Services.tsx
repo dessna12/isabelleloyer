@@ -38,7 +38,7 @@ export default function Services() {
                 </li>
               ))}
             </ul>
-            <a href="#contact" className="services__cta">Prendre rendez-vous</a>
+            <a href="https://calendly.com/isabelle-loyerrollot/nouvelle-reunion" target="_blank" rel="noopener noreferrer" className="services__cta">Prendre rendez-vous</a>
           </div>
 
           <div className="services__card services__card--light">
@@ -52,7 +52,7 @@ export default function Services() {
                 </li>
               ))}
             </ul>
-            <a href="#contact" className="services__cta">Prendre rendez-vous</a>
+            <a href="https://calendly.com/isabelle-loyerrollot/nouvelle-reunion" target="_blank" rel="noopener noreferrer" className="services__cta">Prendre rendez-vous</a>
           </div>
         </div>
       </div>

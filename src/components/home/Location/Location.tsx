@@ -56,7 +56,7 @@ export default function Location() {
             alt="Cabinet de consultation Isabelle Loyer"
             className="location__photo"
           />
-          <a href="#contact" className="location__cta">Prendre rendez-vous</a>
+          <a href="https://calendly.com/isabelle-loyerrollot/nouvelle-reunion" target="_blank" rel="noopener noreferrer" className="location__cta">Prendre rendez-vous</a>
         </div>
       </div>
     </section>
